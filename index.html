@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional focado em desenvolvimento de sistemas, automação e dados aplicados a problemas reais de negócio.">
+  <meta name="theme-color" content="#0f172a">
+
+  <title>Portfólio | Sistemas, Automação e Dados</title>
+
+  <script>
+  (() => {
+    const savedTheme = localStorage.getItem("portfolio-theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    const theme = savedTheme || (prefersDark ? "dark" : "light");
+
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  </script>
+
+
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body id="topo">
+  <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+  <header
+    class="site-header"
+    id="site-header"
+  ></header>
+
+  <main id="conteudo-principal">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Sistemas • Automação • Dados</p>
+
+          <h1>
+            Tecnologia aplicada a
+            <span>problemas reais de negócio.</span>
+          </h1>
+
+          <p class="hero-description">
+            Desenvolvimento de sistemas, automações e soluções orientadas a dados
+            para organizar processos, reduzir atividades manuais e transformar
+            informação em suporte à decisão.
+          </p>
+
+          <div class="hero-actions">
+            <a 
+              class="button button-primary" 
+              href="projetos/index.html">Ver projetos
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="solucoes/index.html"
+            >
+              Soluções para empresas
+            </a>
+          </div>
+
+          <div class="hero-links" aria-label="Links profissionais">
+            <a href="#" data-placeholder-link>GitHub</a>
+            <a href="#" data-placeholder-link>LinkedIn</a>
+            <a href="#contato">Contato</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Resumo de atuação">
+          <div class="hero-panel-header">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Foco profissional</span>
+          </div>
+
+          <div class="focus-list">
+            <article class="focus-item">
+              <span class="focus-number">01</span>
+              <div>
+                <h2>Sistemas</h2>
+                <p>Aplicações para apoiar processos operacionais e administrativos.</p>
+              </div>
+            </article>
+
+            <article class="focus-item">
+              <span class="focus-number">02</span>
+              <div>
+                <h2>Automação</h2>
+                <p>Redução de tarefas repetitivas e integração entre ferramentas.</p>
+              </div>
+            </article>
+
+            <article class="focus-item">
+              <span class="focus-number">03</span>
+              <div>
+                <h2>Dados</h2>
+                <p>Indicadores, dashboards e análises para apoiar decisões.</p>
+              </div>
+            </article>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="projetos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Projetos em destaque</p>
+            <h2>Soluções construídas a partir de problemas concretos.</h2>
+          </div>
+
+          <p>
+            Os projetos são apresentados com distinção clara entre o que já foi
+            implementado, o que está em desenvolvimento e o que pertence ao roadmap.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+
+        <div class="section-actions">
+          <a class="text-link" href="projetos/index.html">
+            Ver todos os projetos
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="especialidades">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Especialidades</p>
+            <h2>Tecnologias organizadas pelo problema que ajudam a resolver.</h2>
+          </div>
+
+          <p>
+            O foco não está em acumular ferramentas, mas em combiná-las de forma
+            coerente dentro de soluções reais.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <span class="expertise-icon" aria-hidden="true">&lt;/&gt;</span>
+            <h3>Desenvolvimento</h3>
+            <p>Aplicações web, lógica de negócio, persistência e organização de código.</p>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <span class="expertise-icon" aria-hidden="true">↻</span>
+            <h3>Automação e Integrações</h3>
+            <p>Fluxos automatizados, Google Workspace e comunicação entre sistemas.</p>
+            <ul class="tag-list">
+              <li>Apps Script</li>
+              <li>REST APIs</li>
+              <li>HTTP</li>
+              <li>JSON</li>
+              <li>Google Workspace</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <span class="expertise-icon" aria-hidden="true">▥</span>
+            <h3>Dados e BI</h3>
+            <p>Transformação de dados em indicadores operacionais e gerenciais.</p>
+            <ul class="tag-list">
+              <li>Power BI</li>
+              <li>Power Query</li>
+              <li>DAX</li>
+              <li>Looker Studio</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <span class="expertise-icon" aria-hidden="true">◇</span>
+            <h3>Engenharia de Software</h3>
+            <p>Separação de responsabilidades, versionamento e evolução sustentável.</p>
+            <ul class="tag-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>MVC</li>
+              <li>Repository</li>
+              <li>Service Layer</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="processo">
+      <div class="container">
+        <div class="section-heading section-heading-light">
+          <div>
+            <p class="eyebrow">Da operação ao software</p>
+            <h2>Entender antes de automatizar.</h2>
+          </div>
+
+          <p>
+            A solução começa pelo processo e pela regra de negócio. A tecnologia
+            entra depois, como meio para resolver o problema.
+          </p>
+        </div>
+
+        <ol class="process-grid">
+          <li>
+            <span>01</span>
+            <h3>Entender</h3>
+            <p>Mapear o processo, as dores, os dados disponíveis e as restrições.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Projetar</h3>
+            <p>Definir fluxo, regras, arquitetura e a solução mínima necessária.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>Construir</h3>
+            <p>Implementar com organização, validações e separação de responsabilidades.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>Medir</h3>
+            <p>Transformar registros e resultados em informação útil para evolução.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="solucoes">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Soluções para empresas</p>
+            <h2>Tecnologia aplicada a processos que ainda dependem de trabalho manual.</h2>
+          </div>
+
+          <p>
+            Escopo orientado a pequenas operações e empresas que precisam organizar,
+            automatizar ou analisar processos existentes.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <article class="solution-card">
+            <h3>Sistemas de gestão</h3>
+            <p>Controles internos, cadastros, pagamentos, históricos e rotinas operacionais.</p>
+          </article>
+
+          <article class="solution-card">
+            <h3>Automação de processos</h3>
+            <p>Planilhas, registros, notificações, consolidações e tarefas repetitivas.</p>
+          </article>
+
+          <article class="solution-card">
+            <h3>Integrações</h3>
+            <p>APIs, Google Workspace, bancos de dados e sincronização de informações.</p>
+          </article>
+
+          <article class="solution-card">
+            <h3>Dados e indicadores</h3>
+            <p>Dashboards, relatórios e acompanhamento de indicadores operacionais.</p>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="button button-secondary" href="solucoes/index.html">
+            Conhecer as soluções
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="sobre">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Sobre</p>
+          <h2>Experiência de operação combinada com desenvolvimento e dados.</h2>
+        </div>
+
+        <div class="about-content">
+          <p>
+            Minha trajetória reúne experiência em ambientes operacionais e desenvolvimento
+            de soluções tecnológicas. Essa combinação ajuda a analisar processos não apenas
+            pelo código, mas também pela lógica de funcionamento do negócio.
+          </p>
+
+          <p>
+            O foco do portfólio é demonstrar essa capacidade através de sistemas,
+            automações, integrações e projetos de dados construídos a partir de necessidades
+            concretas.
+          </p>
+
+          <a class="text-link" href="sobre/index.html">
+            Conhecer a trajetória
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Tem um processo que pode ser melhorado com tecnologia?</h2>
+          <p>
+            Para oportunidades profissionais, projetos ou conversas sobre desenvolvimento,
+            automação e dados.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-primary" href="#" data-placeholder-link>LinkedIn</a>
+          <a class="button button-secondary" href="#" data-placeholder-link>GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Portfólio profissional — Sistemas, Automação e Dados.</p>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/project-data.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

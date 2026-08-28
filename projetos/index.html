@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Projetos de desenvolvimento, automação, integrações e dados."
+  >
+
+  <meta
+    name="theme-color"
+    content="#f8fafc"
+  >
+
+  <title>
+    Projetos | Portfólio
+  </title>
+
+
+  <script>
+
+    (() => {
+
+      const savedTheme =
+        localStorage.getItem(
+          "portfolio-theme"
+        );
+
+      const prefersDark =
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+
+      const theme =
+        savedTheme ||
+        (
+          prefersDark
+            ? "dark"
+            : "light"
+        );
+
+      document.documentElement
+        .setAttribute(
+          "data-theme",
+          theme
+        );
+
+    })();
+
+  </script>
+
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/reset.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/base.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/layout.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/projects-page.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/responsive.css"
+  >
+
+</head>
+
+
+<body id="topo">
+
+
+<a
+  class="skip-link"
+  href="#conteudo-principal"
+>
+  Ir para o conteúdo principal
+</a>
+
+
+
+<header
+  class="site-header"
+  id="site-header"
+></header>
+
+
+
+<main id="conteudo-principal">
+
+
+  <section class="projects-page-hero">
+
+    <div class="container">
+
+      <p class="eyebrow">
+        Projetos
+      </p>
+
+      <h1>
+        Problemas, decisões e
+        soluções construídas
+        com tecnologia.
+      </h1>
+
+      <p
+        class="projects-page-description"
+      >
+        Cada projeto é apresentado de
+        acordo com seu estágio real de
+        desenvolvimento. Cases em andamento
+        e ideias futuras são identificados
+        explicitamente.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="section">
+
+    <div class="container">
+
+
+      <div class="projects-toolbar">
+
+
+        <div class="projects-filters">
+          <button
+              class="project-filter is-active"
+              type="button"
+              data-project-filter="todos"
+          >
+              Todos
+          </button>
+
+          <button
+              class="project-filter"
+              type="button"
+              data-project-filter="concluido"
+          >
+              Concluídos
+          </button>
+
+          <button
+              class="project-filter"
+              type="button"
+              data-project-filter="desenvolvimento"
+          >
+              Em desenvolvimento
+          </button>
+
+          <button
+              class="project-filter"
+              type="button"
+              data-project-filter="roadmap"
+          >
+              Roadmap
+          </button>
+      </div>
+
+
+        <span
+          class="project-counter"
+          id="project-counter"
+        >
+        </span>
+
+
+      </div>
+
+
+
+      <div
+        class="projects-catalog"
+        id="projects-catalog"
+        aria-live="polite"
+      >
+      </div>
+
+
+
+      <div class="projects-note">
+
+        <strong>
+          Transparência sobre o estágio
+          dos projetos
+        </strong>
+
+        <p>
+          Funcionalidades planejadas não são
+          apresentadas como implementadas.
+          O status de cada projeto representa
+          o estágio atual do desenvolvimento.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+
+<footer class="site-footer">
+
+  <div class="container footer-inner">
+
+    <p>
+      Portfólio profissional —
+      Sistemas, Automação e Dados.
+    </p>
+
+    <a href="#topo">
+      Voltar ao topo ↑
+    </a>
+
+  </div>
+
+</footer>
+
+
+<script src="../assets/js/header.js"></script>
+<script src="../assets/js/project-data.js"></script>
+<script src="../assets/js/projects-page.js"></script>
+<script src="../assets/js/navigation.js"></script>
+<script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

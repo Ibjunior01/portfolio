@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Case Sistema de Gestão de Estudos — solução desenvolvida com Google Sheets e Apps Script para planejamento, acompanhamento e revisão de estudos."
+  >
+
+  <meta
+    name="theme-color"
+    content="#f8fafc"
+  >
+
+  <title>
+    Sistema de Gestão de Estudos | Case de Automação
+  </title>
+
+
+  <!-- TEMA -->
+
+  <script>
+    (() => {
+
+      const savedTheme =
+        localStorage.getItem("portfolio-theme");
+
+      const prefersDark =
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+
+      const theme =
+        savedTheme ||
+        (prefersDark ? "dark" : "light");
+
+      document.documentElement
+        .setAttribute(
+          "data-theme",
+          theme
+        );
+
+    })();
+  </script>
+
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/reset.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/base.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/layout.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/case-study.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/responsive.css"
+  >
+
+</head>
+
+
+<body id="topo">
+
+  <a
+    class="skip-link"
+    href="#conteudo-principal"
+  >
+    Ir para o conteúdo principal
+  </a>
+
+
+  <!-- HEADER -->
+
+  <header
+    class="site-header"
+    id="site-header"
+  ></header>
+
+
+  <main id="conteudo-principal">
+
+
+    <!-- HERO -->
+
+    <section class="case-hero">
+
+      <div class="container">
+
+
+        <div class="case-breadcrumb">
+
+          <a href="../index.html">
+            Home
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <a href="index.html">
+            Projetos
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <span>
+            Sistema de Gestão de Estudos
+          </span>
+
+        </div>
+
+
+        <div class="case-hero-grid">
+
+
+          <div>
+
+            <p class="eyebrow">
+              Google Workspace • Automação
+            </p>
+
+
+            <h1 class="case-title">
+              Sistema de Gestão de Estudos
+            </h1>
+
+
+            <p class="case-summary">
+
+              Sistema desenvolvido para transformar
+              planejamento, execução e revisão de estudos
+              em um fluxo estruturado, utilizando
+              Google Sheets, Google Apps Script e
+              automações para reduzir controles manuais
+              e melhorar o acompanhamento da evolução.
+
+            </p>
+
+          </div>
+
+
+          <aside class="case-meta">
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Status
+              </span>
+
+              <span
+                class="status-badge status-desenvolvimento"
+              >
+                Em desenvolvimento
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Tipo
+              </span>
+
+              <span class="case-meta-value">
+                Sistema de automação
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Plataforma
+              </span>
+
+              <span class="case-meta-value">
+                Google Workspace
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Backend
+              </span>
+
+              <span class="case-meta-value">
+                Google Apps Script
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Dados
+              </span>
+
+              <span class="case-meta-value">
+                Google Sheets
+              </span>
+
+            </div>
+
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 01 PROBLEMA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            01
+          </p>
+
+          <h2 class="case-section-title">
+            O problema
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Um plano de estudos de longo prazo envolve
+            diferentes disciplinas, assuntos, sessões
+            realizadas, tempo disponível e ciclos
+            periódicos de revisão.
+
+          </p>
+
+
+          <p>
+
+            Quando essas informações ficam distribuídas
+            entre anotações e planilhas sem integração,
+            torna-se difícil saber o que estudar,
+            o que já foi realizado e quais conteúdos
+            precisam ser revisados.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Desafio central
+            </strong>
+
+            Criar um fluxo que conectasse planejamento,
+            execução, histórico e revisões sem exigir
+            atualização manual de várias planilhas.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 02 SOLUÇÃO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            02
+          </p>
+
+          <h2 class="case-section-title">
+            A solução
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A solução utiliza Google Sheets como camada
+            de dados e Google Apps Script como camada
+            de automação e regras de negócio.
+
+          </p>
+
+
+          <p>
+
+            As diferentes áreas do processo são
+            organizadas em módulos integrados,
+            permitindo acompanhar desde os assuntos
+            previstos até os estudos realizados
+            e suas revisões futuras.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                Edital
+              </h3>
+
+              <p>
+
+                Organização das disciplinas e assuntos
+                que formam a base do planejamento.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Banco de conhecimento
+              </h3>
+
+              <p>
+
+                Estrutura centralizada para armazenar
+                conteúdos e relacioná-los ao planejamento.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Plano de estudos
+              </h3>
+
+              <p>
+
+                Distribuição dos assuntos conforme
+                disponibilidade, prioridade e progresso.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Controle de estudos
+              </h3>
+
+              <p>
+
+                Registro das sessões realizadas,
+                tempo dedicado e conteúdo estudado.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Revisões
+              </h3>
+
+              <p>
+
+                Geração automatizada das próximas
+                revisões a partir da realização
+                de cada estudo.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Indicadores
+              </h3>
+
+              <p>
+
+                Consolidação das informações para
+                acompanhar carga de estudo,
+                execução e evolução.
+
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 03 AUTOMAÇÃO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            03
+          </p>
+
+          <h2 class="case-section-title">
+            Automação do processo
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Parte importante do projeto está na redução
+            de tarefas repetitivas dentro da planilha.
+
+          </p>
+
+
+          <p>
+
+            O Apps Script executa regras responsáveis
+            por preparar estruturas, gerar identificadores,
+            aplicar validações e criar registros derivados
+            das atividades realizadas.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              geração automática de identificadores
+              para registros;
+            </li>
+
+            <li>
+              instalação e manutenção de fórmulas;
+            </li>
+
+            <li>
+              criação de validações de dados;
+            </li>
+
+            <li>
+              geração de revisões a partir
+              dos estudos concluídos;
+            </li>
+
+            <li>
+              padronização das informações
+              registradas;
+            </li>
+
+            <li>
+              redução de lançamentos manuais
+              repetitivos.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 04 REVISÕES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            04
+          </p>
+
+          <h2 class="case-section-title">
+            Ciclo de revisões
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O sistema também controla revisões
+            programadas após o estudo de um conteúdo.
+
+          </p>
+
+
+          <p>
+
+            A partir do registro da sessão,
+            novas datas podem ser calculadas
+            automaticamente, mantendo o histórico
+            de estudos conectado às próximas
+            atividades.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                24 horas
+              </h3>
+
+              <p>
+                Primeira revisão após o estudo.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                7 dias
+              </h3>
+
+              <p>
+                Reforço de curto prazo.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                15 dias
+              </h3>
+
+              <p>
+                Continuidade do ciclo.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                30 dias
+              </h3>
+
+              <p>
+                Revisão de médio prazo.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                60 dias
+              </h3>
+
+              <p>
+                Reforço de conteúdos anteriores.
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 05 ARQUITETURA -->
+
+    <section
+      class="case-section"
+      id="arquitetura"
+    >
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            05
+          </p>
+
+          <h2 class="case-section-title">
+            Arquitetura
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A arquitetura foi mantida simples e adequada
+            ao contexto do projeto, utilizando serviços
+            já disponíveis no ecossistema Google.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                Google Sheets
+              </h3>
+
+              <p>
+
+                Atua como camada de persistência,
+                consulta e visualização dos dados.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Apps Script
+              </h3>
+
+              <p>
+
+                Executa regras de negócio,
+                automações e manipulação
+                das estruturas da planilha.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                HTML
+              </h3>
+
+              <p>
+
+                Utilizado nas interfaces e componentes
+                auxiliares do sistema.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                JavaScript
+              </h3>
+
+              <p>
+
+                Responsável pelas interações
+                e comportamento das interfaces.
+
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 06 DECISÕES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            06
+          </p>
+
+          <h2 class="case-section-title">
+            Decisões de projeto
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O objetivo não foi transformar uma planilha
+            em um sistema excessivamente complexo,
+            mas usar automação para eliminar os principais
+            pontos de trabalho manual.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Decisão arquitetural
+            </strong>
+
+            Manter Google Sheets como interface de dados
+            enquanto o Apps Script concentra as regras
+            que precisam de automação.
+
+          </div>
+
+
+          <p>
+
+            Essa escolha reduz infraestrutura,
+            simplifica manutenção e permite evoluir
+            o projeto de forma incremental.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 07 STATUS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            07
+          </p>
+
+          <h2 class="case-section-title">
+            Estado atual
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O sistema já possui os principais fluxos
+            de planejamento, registro e revisão,
+            mas continua evoluindo conforme novas
+            necessidades são identificadas durante
+            o uso.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              planejamento estruturado de estudos;
+            </li>
+
+            <li>
+              registro das sessões realizadas;
+            </li>
+
+            <li>
+              geração automatizada de revisões;
+            </li>
+
+            <li>
+              controle de tempo planejado e realizado;
+            </li>
+
+            <li>
+              validações e fórmulas automatizadas;
+            </li>
+
+            <li>
+              evolução contínua das regras
+              de planejamento.
+            </li>
+
+          </ul>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Status
+            </strong>
+
+            Projeto funcional em desenvolvimento contínuo,
+            utilizado também como ambiente prático para
+            automação de processos com Google Apps Script.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FINAL -->
+
+    <section class="case-final">
+
+      <div class="container">
+
+        <div class="case-final-card">
+
+
+          <div>
+
+            <p class="eyebrow">
+              Outros projetos
+            </p>
+
+            <h2>
+              Conheça outros cases do portfólio.
+            </h2>
+
+            <p>
+
+              Sistemas, automações e soluções
+              orientadas a dados desenvolvidas
+              a partir de problemas reais.
+
+            </p>
+
+          </div>
+
+
+          <div class="case-final-actions">
+
+            <a
+              class="button button-primary"
+              href="index.html"
+            >
+              Ver projetos
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="../index.html"
+            >
+              Voltar à Home
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        Portfólio profissional —
+        Sistemas, Automação e Dados.
+      </p>
+
+      <a href="#topo">
+        Voltar ao topo ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JS -->
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

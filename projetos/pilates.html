@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" data-theme="light">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Case de desenvolvimento de um sistema de gestão financeira e operacional para estúdio de Pilates com múltiplas unidades."
+  >
+
+  <meta
+    name="theme-color"
+    content="#f8fafc"
+  >
+
+  <title>
+    Sistema de Gestão para Estúdio de Pilates | Case
+  </title>
+
+
+  <!-- TEMA -->
+
+  <script>
+
+    (() => {
+
+      const savedTheme =
+        localStorage.getItem("portfolio-theme");
+
+      const prefersDark =
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+
+      const theme =
+        savedTheme ||
+        (prefersDark ? "dark" : "light");
+
+      document.documentElement
+        .setAttribute(
+          "data-theme",
+          theme
+        );
+
+    })();
+
+  </script>
+
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/reset.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/base.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/layout.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/case-study.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/responsive.css"
+  >
+
+</head>
+
+
+<body id="topo">
+
+
+  <!-- ACESSIBILIDADE -->
+
+  <a
+    class="skip-link"
+    href="#conteudo-principal"
+  >
+    Ir para o conteúdo principal
+  </a>
+
+
+  <!-- HEADER -->
+
+  <header
+    class="site-header"
+    id="site-header"
+  ></header>
+
+
+  <!-- CONTEÚDO -->
+
+  <main id="conteudo-principal">
+
+
+    <!-- HERO -->
+
+    <section class="case-hero">
+
+      <div class="container">
+
+
+        <div class="case-breadcrumb">
+
+          <a href="../index.html">
+            Home
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <a href="index.html">
+            Projetos
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <span>
+            Gestão para Estúdio de Pilates
+          </span>
+
+        </div>
+
+
+        <div class="case-hero-grid">
+
+
+          <div>
+
+            <p class="eyebrow">
+              Sistema de Gestão • B2B
+            </p>
+
+
+            <h1 class="case-title">
+
+              Gestão financeira e operacional
+              para um estúdio de Pilates.
+
+            </h1>
+
+
+            <p class="case-summary">
+
+              Sistema desenvolvido sobre Google Workspace
+              para centralizar pagamentos, parcelamentos,
+              repasses de fisioterapeutas, despesas,
+              movimentações financeiras e informações
+              de múltiplas unidades.
+
+            </p>
+
+          </div>
+
+
+          <aside class="case-meta">
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Status
+              </span>
+
+              <span
+                class="status-badge
+                status-desenvolvimento"
+              >
+                Em desenvolvimento
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Tipo
+              </span>
+
+              <span class="case-meta-value">
+                Sistema de gestão
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Arquitetura
+              </span>
+
+              <span class="case-meta-value">
+                Web App + Google Apps Script
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Persistência
+              </span>
+
+              <span class="case-meta-value">
+                Google Sheets
+              </span>
+
+            </div>
+
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 01 PROBLEMA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            01
+          </p>
+
+          <h2 class="case-section-title">
+            O problema
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A operação precisa controlar alunos,
+            planos, pagamentos, parcelamentos,
+            fisioterapeutas, unidades e despesas
+            financeiras dentro de um processo
+            integrado.
+
+          </p>
+
+
+          <p>
+
+            Além de registrar recebimentos, o sistema
+            precisa respeitar regras específicas para
+            liberação das parcelas e calcular os valores
+            de repasse dos profissionais.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Desafio central
+            </strong>
+
+            Transformar regras financeiras e operacionais
+            que normalmente seriam controladas em várias
+            planilhas em um fluxo único e rastreável.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 02 SOLUÇÃO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            02
+          </p>
+
+          <h2 class="case-section-title">
+            A solução
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A solução utiliza Google Sheets como camada
+            de dados e Google Apps Script como backend,
+            combinados com formulários desenvolvidos em
+            HTML, CSS e JavaScript.
+
+          </p>
+
+
+          <p>
+
+            Essa arquitetura permite criar uma interface
+            mais amigável sem abandonar a infraestrutura
+            do Google Workspace já utilizada na operação.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                Pagamentos
+              </h3>
+
+              <p>
+
+                Registro estruturado de pagamentos,
+                planos, formas de pagamento,
+                parcelamentos, responsável financeiro,
+                fisioterapeuta e unidade.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Parcelas
+              </h3>
+
+              <p>
+
+                Geração e acompanhamento das parcelas
+                vinculadas às regras de cada plano
+                contratado.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Repasse profissional
+              </h3>
+
+              <p>
+
+                Consolidação dos valores devidos aos
+                fisioterapeutas por competência
+                e unidade.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Despesas
+              </h3>
+
+              <p>
+
+                Registro de despesas operacionais,
+                recorrentes e não recorrentes,
+                vinculadas às unidades.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Adiantamentos
+              </h3>
+
+              <p>
+
+                Registro de valores antecipados aos
+                profissionais para posterior consideração
+                no processo financeiro.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Movimentação de caixa
+              </h3>
+
+              <p>
+
+                Consolidação das movimentações financeiras
+                para aumentar a rastreabilidade dos fluxos.
+
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- 03 DEMONSTRAÇÃO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            03
+          </p>
+
+          <h2 class="case-section-title">
+            Demonstração
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            Veja uma demonstração curta do fluxo principal
+            do sistema, mostrando como os registros financeiros
+            e operacionais são processados.
+          </p>
+
+
+          <div class="demo-card">
+
+            <div class="demo-card-icon" aria-hidden="true">
+              ▶
+            </div>
+
+            <div class="demo-card-content">
+
+              <span class="demo-label">
+                Vídeo demonstrativo
+              </span>
+
+              <h3>
+                Sistema de Gestão para Estúdio de Pilates
+              </h3>
+
+              <p>
+                Demonstração do registro de pagamentos,
+                geração de parcelas, repasses e consolidação
+                das informações financeiras.
+              </p>
+
+              <div class="demo-meta">
+                <span>Até 2 minutos</span>
+                <span>•</span>
+                <span>Dados fictícios</span>
+              </div>
+
+
+              <a
+                class="button button-primary"
+                href="#"
+                data-demo-link
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Assistir no LinkedIn ↗
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- 04 REGRAS DE NEGÓCIO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            04
+          </p>
+
+          <h2 class="case-section-title">
+            Regras de negócio
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Uma das partes mais importantes do projeto
+            não é a interface, mas a implementação das
+            regras financeiras da operação.
+
+          </p>
+
+
+          <div class="rule-grid">
+
+
+            <article class="rule-card">
+
+              <span>
+                Plano trimestral
+              </span>
+
+              <h3>
+                Pagamento à vista
+              </h3>
+
+              <p>
+
+                Pagamentos à vista em dinheiro,
+                Pix ou crédito liberam os três
+                meses previstos no plano.
+
+              </p>
+
+            </article>
+
+
+            <article class="rule-card">
+
+              <span>
+                Plano trimestral
+              </span>
+
+              <h3>
+                Pix em 2 pagamentos
+              </h3>
+
+              <p>
+
+                O primeiro pagamento libera o primeiro
+                mês. O segundo libera os dois meses
+                restantes.
+
+              </p>
+
+            </article>
+
+
+            <article class="rule-card">
+
+              <span>
+                Plano trimestral
+              </span>
+
+              <h3>
+                Cartão parcelado
+              </h3>
+
+              <p>
+
+                No pagamento em cartão parcelado
+                em três vezes, os três meses são
+                liberados.
+
+              </p>
+
+            </article>
+
+
+            <article class="rule-card">
+
+              <span>
+                Repasse
+              </span>
+
+              <h3>
+                Desconto ao aluno
+              </h3>
+
+              <p>
+
+                O desconto concedido no pagamento não
+                altera automaticamente a base utilizada
+                para o cálculo do repasse profissional.
+
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 05 ARQUITETURA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            05
+          </p>
+
+          <h2 class="case-section-title">
+            Arquitetura
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+
+          <p>
+
+            A arquitetura foi construída utilizando
+            recursos do Google Workspace para reduzir
+            infraestrutura e manter o sistema adequado
+            ao porte da operação.
+
+          </p>
+
+
+          <div class="architecture-box">
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Interface
+              </strong>
+
+              <span>
+                HTML • CSS • JavaScript
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">
+              ↓
+            </div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Backend
+              </strong>
+
+              <span>
+                Google Apps Script
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">
+              ↓
+            </div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Regras de negócio
+              </strong>
+
+              <span>
+                Pagamentos • Parcelas • Repasse • Despesas
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">
+              ↓
+            </div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Persistência
+              </strong>
+
+              <span>
+                Google Sheets
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">
+              ↓
+            </div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Informação gerencial
+              </strong>
+
+              <span>
+                Consolidações financeiras e indicadores
+              </span>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 06 DADOS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            06
+          </p>
+
+          <h2 class="case-section-title">
+            Estrutura de dados
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Os dados são separados por entidades e
+            processos para facilitar manutenção,
+            rastreabilidade e consolidação financeira.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              Configurações
+            </li>
+
+            <li>
+              Alunos
+            </li>
+
+            <li>
+              Unidades
+            </li>
+
+            <li>
+              Fisioterapeutas
+            </li>
+
+            <li>
+              Planos e serviços
+            </li>
+
+            <li>
+              Pagamentos registrados
+            </li>
+
+            <li>
+              Parcelas
+            </li>
+
+            <li>
+              Adiantamentos
+            </li>
+
+            <li>
+              Repasse de fisioterapeutas
+            </li>
+
+            <li>
+              Despesas
+            </li>
+
+            <li>
+              Movimentações de caixa
+            </li>
+
+            <li>
+              Resultado operacional
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 07 STATUS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            07
+          </p>
+
+          <h2 class="case-section-title">
+            Estado do projeto
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+
+          <p>
+
+            O portfólio diferencia explicitamente
+            funcionalidades já implementadas de
+            melhorias e funcionalidades futuras.
+
+          </p>
+
+
+          <div class="status-columns">
+
+
+            <article
+              class="status-column
+              status-column-implemented"
+            >
+
+              <h3>
+                Implementado
+              </h3>
+
+              <ul>
+
+                <li>
+                  ✓ Cadastro estruturado de pagamentos
+                </li>
+
+                <li>
+                  ✓ Processamento de parcelas
+                </li>
+
+                <li>
+                  ✓ Controle de repasse
+                </li>
+
+                <li>
+                  ✓ Registro de adiantamentos
+                </li>
+
+                <li>
+                  ✓ Registro de despesas
+                </li>
+
+                <li>
+                  ✓ Movimentações de caixa
+                </li>
+
+                <li>
+                  ✓ Consolidação do resultado operacional
+                </li>
+
+              </ul>
+
+            </article>
+
+
+            <article
+              class="status-column
+              status-column-progress"
+            >
+
+              <h3>
+                Em desenvolvimento
+              </h3>
+
+              <ul>
+
+                <li>
+                  ◐ Homologação dos fluxos completos
+                </li>
+
+                <li>
+                  ◐ Refinamento das interfaces
+                </li>
+
+                <li>
+                  ◐ Validação final das regras financeiras
+                </li>
+
+                <li>
+                  ◐ Organização da documentação técnica
+                </li>
+
+              </ul>
+
+            </article>
+
+
+            <article
+              class="status-column
+              status-column-roadmap"
+            >
+
+              <h3>
+                Roadmap
+              </h3>
+
+              <ul>
+
+                <li>
+                  ○ Dashboard gerencial consolidado
+                </li>
+
+                <li>
+                  ○ Indicadores executivos
+                </li>
+
+                <li>
+                  ○ Evolução de autenticação e permissões
+                </li>
+
+                <li>
+                  ○ Avaliação de arquitetura SaaS
+                </li>
+
+              </ul>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 08 TECNOLOGIAS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            08
+          </p>
+
+          <h2 class="case-section-title">
+            Tecnologias
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A stack foi escolhida considerando
+            simplicidade de implantação, integração
+            com planilhas e custo compatível com
+            uma pequena operação.
+
+          </p>
+
+
+          <div class="tech-grid">
+
+            <span class="tech-item">
+              Google Apps Script
+            </span>
+
+            <span class="tech-item">
+              Google Sheets
+            </span>
+
+            <span class="tech-item">
+              HTML5
+            </span>
+
+            <span class="tech-item">
+              CSS3
+            </span>
+
+            <span class="tech-item">
+              JavaScript
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 09 DECISÕES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            09
+          </p>
+
+          <h2 class="case-section-title">
+            Decisões de engenharia
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Google Workspace em vez de uma
+              infraestrutura web tradicional
+            </strong>
+
+            Para o estágio atual do produto,
+            Google Apps Script e Google Sheets
+            permitem reduzir complexidade de deploy,
+            infraestrutura e operação.
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Interface separada da planilha
+            </strong>
+
+            Formulários HTML permitem criar uma
+            experiência mais controlada e reduzir
+            a dependência de edição direta das
+            células pelos usuários.
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Separação dos registros financeiros
+            </strong>
+
+            Pagamentos, parcelas, despesas,
+            adiantamentos e movimentações permanecem
+            separados para permitir rastreabilidade
+            e consolidação posterior.
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 10 RESULTADO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            10
+          </p>
+
+          <h2 class="case-section-title">
+            Resultado atual
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O sistema já centraliza diferentes
+            componentes do processo financeiro
+            dentro de uma estrutura única e
+            relacionada.
+
+          </p>
+
+
+          <p>
+
+            O principal ganho nesta fase é a
+            rastreabilidade: pagamentos, parcelas,
+            profissionais, unidades, despesas e
+            repasses deixam de ser controles
+            completamente independentes.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Métricas quantitativas
+            </strong>
+
+            Ainda não serão apresentadas métricas
+            de redução de tempo ou retorno financeiro
+            enquanto esses resultados não forem
+            medidos de forma confiável.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 11 PRÓXIMOS PASSOS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            11
+          </p>
+
+          <h2 class="case-section-title">
+            Próximos passos
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+
+          <ul class="case-list">
+
+            <li>
+              Finalizar a homologação dos fluxos financeiros.
+            </li>
+
+            <li>
+              Criar documentação técnica do sistema.
+            </li>
+
+            <li>
+              Inserir screenshots anonimizados no case.
+            </li>
+
+            <li>
+              Consolidar os principais indicadores gerenciais.
+            </li>
+
+            <li>
+              Avaliar limites da arquitetura Google Workspace.
+            </li>
+
+            <li>
+              Estudar uma futura migração para arquitetura SaaS
+              caso o produto seja comercializado em escala.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FINAL -->
+
+    <section class="case-final">
+
+      <div class="container">
+
+
+        <div class="case-final-card">
+
+
+          <div>
+
+            <p class="eyebrow">
+              Próximo projeto
+            </p>
+
+            <h2>
+              Conheça outros cases do portfólio.
+            </h2>
+
+            <p>
+
+              Sistemas, automações e soluções
+              orientadas a dados desenvolvidas
+              a partir de problemas reais.
+
+            </p>
+
+          </div>
+
+
+          <div class="case-final-actions">
+
+            <a
+              class="button button-primary"
+              href="index.html"
+            >
+              Ver projetos
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="../index.html"
+            >
+              Voltar à Home
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        Portfólio profissional —
+        Sistemas, Automação e Dados.
+      </p>
+
+      <a href="#topo">
+        Voltar ao topo ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JS -->
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

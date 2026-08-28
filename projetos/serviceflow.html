@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Case ServiceFlow — SaaS Full Stack para gestão de clientes, técnicos e ordens de serviço."
+  >
+
+  <meta
+    name="theme-color"
+    content="#f8fafc"
+  >
+
+  <title>
+    ServiceFlow | Case Full Stack
+  </title>
+
+
+  <!-- TEMA -->
+
+  <script>
+    (() => {
+      const savedTheme =
+        localStorage.getItem("portfolio-theme");
+
+      const prefersDark =
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+
+      const theme =
+        savedTheme ||
+        (prefersDark ? "dark" : "light");
+
+      document.documentElement
+        .setAttribute(
+          "data-theme",
+          theme
+        );
+    })();
+  </script>
+
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/reset.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/base.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/layout.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/case-study.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/responsive.css"
+  >
+</head>
+
+
+<body id="topo">
+
+  <a
+    class="skip-link"
+    href="#conteudo-principal"
+  >
+    Ir para o conteúdo principal
+  </a>
+
+
+  <!-- HEADER -->
+
+  <header
+    class="site-header"
+    id="site-header"
+  ></header>
+
+
+  <main id="conteudo-principal">
+
+
+    <!-- HERO -->
+
+    <section class="case-hero">
+
+      <div class="container">
+
+        <div class="case-breadcrumb">
+
+          <a href="../index.html">
+            Home
+          </a>
+
+          <span aria-hidden="true">/</span>
+
+          <a href="index.html">
+            Projetos
+          </a>
+
+          <span aria-hidden="true">/</span>
+
+          <span>
+            ServiceFlow
+          </span>
+
+        </div>
+
+
+        <div class="case-hero-grid">
+
+          <div>
+
+            <p class="eyebrow">
+              SaaS B2B • Full Stack
+            </p>
+
+            <h1 class="case-title">
+              ServiceFlow
+            </h1>
+
+            <p class="case-summary">
+
+              Plataforma SaaS B2B para gestão de clientes,
+              técnicos e ordens de serviço, com arquitetura
+              multi-tenant, autenticação JWT, controle de acesso,
+              dashboards operacionais e financeiros, exportações,
+              administração da plataforma, testes automatizados,
+              CI e deploy em produção.
+
+            </p>
+
+            <div
+              class="hero-actions"
+              style="margin-top: var(--space-8);"
+            >
+
+              <a
+                class="button button-primary"
+                href="https://serviceflow-liard.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Abrir sistema ↗
+              </a>
+
+              <a
+                class="button button-secondary"
+                href="#arquitetura"
+              >
+                Ver arquitetura
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <aside class="case-meta">
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Status
+              </span>
+
+              <span
+                class="status-badge status-concluido"
+              >
+                MVP concluído
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Tipo
+              </span>
+
+              <span class="case-meta-value">
+                SaaS B2B
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Frontend
+              </span>
+
+              <span class="case-meta-value">
+                React + TypeScript
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Backend
+              </span>
+
+              <span class="case-meta-value">
+                FastAPI
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Banco
+              </span>
+
+              <span class="case-meta-value">
+                PostgreSQL
+              </span>
+
+            </div>
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </section>
+
+<!-- EVIDÊNCIAS TÉCNICAS -->
+
+    <section
+    class="case-evidence"
+    aria-label="Evidências técnicas do projeto"
+    >
+
+    <div class="container">
+
+        <div class="evidence-grid">
+
+
+        <article class="evidence-item">
+
+            <strong>
+            116
+            </strong>
+
+            <span>
+            testes backend aprovados
+            </span>
+
+        </article>
+
+
+        <article class="evidence-item">
+
+            <strong>
+            CI verde
+            </strong>
+
+            <span>
+            backend e frontend
+            </span>
+
+        </article>
+
+
+        <article class="evidence-item">
+
+            <strong>
+            0
+            </strong>
+
+            <span>
+            vulnerabilidades no npm audit
+            </span>
+
+        </article>
+
+
+        <article class="evidence-item">
+
+            <strong>
+            ~67%
+            </strong>
+
+            <span>
+            redução do JavaScript inicial
+            </span>
+
+        </article>
+
+
+        <article class="evidence-item">
+
+            <strong>
+            Produção
+            </strong>
+
+            <span>
+            Vercel • Render • Neon
+            </span>
+
+        </article>
+
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- 01 PROBLEMA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            01
+          </p>
+
+          <h2 class="case-section-title">
+            O problema
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            Pequenos prestadores de serviços técnicos precisam
+            acompanhar clientes, técnicos, agendamentos e ordens
+            de serviço dentro de operações que muitas vezes
+            dependem de planilhas, mensagens e controles dispersos.
+          </p>
+
+          <p>
+            Conforme a operação cresce, aumenta a dificuldade de
+            acompanhar responsabilidades, histórico dos atendimentos,
+            status dos serviços e informações financeiras.
+          </p>
+
+          <div class="case-highlight">
+
+            <strong>
+              Desafio central
+            </strong>
+
+            Criar uma plataforma capaz de organizar o ciclo das
+            ordens de serviço e, ao mesmo tempo, possuir uma
+            arquitetura preparada para atender múltiplas empresas.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 02 SOLUÇÃO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            02
+          </p>
+
+          <h2 class="case-section-title">
+            A solução
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            O ServiceFlow foi desenvolvido como uma aplicação
+            SaaS Full Stack com frontend React e uma API REST
+            construída em FastAPI.
+          </p>
+
+          <p>
+            Cada empresa opera dentro de seu próprio contexto,
+            enquanto usuários, clientes e ordens de serviço são
+            relacionados ao tenant correspondente.
+          </p>
+
+
+          <div class="feature-grid">
+
+            <article class="feature-card">
+
+              <h3>
+                Ordens de serviço
+              </h3>
+
+              <p>
+                Criação, agendamento, atribuição,
+                prioridades, itens, valores e status.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Clientes
+              </h3>
+
+              <p>
+                Cadastro e organização das informações
+                relacionadas aos atendimentos.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Técnicos
+              </h3>
+
+              <p>
+                Equipes com controle de acesso e escopo
+                operacional por usuário.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Dashboards
+              </h3>
+
+              <p>
+                Indicadores operacionais e financeiros
+                calculados pelo backend.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Planos
+              </h3>
+
+              <p>
+                Trial, planos comerciais e limites
+                de utilização por assinatura.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Multi-tenancy
+              </h3>
+
+              <p>
+                Isolamento lógico de empresas e seus
+                respectivos recursos.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 03 DEMONSTRAÇÃO -->
+
+<!-- 03 DEMONSTRAÇÃO -->
+
+    <section class="case-section">
+
+    <div class="container case-section-grid">
+
+        <div>
+
+        <p class="case-section-number">
+            03
+        </p>
+
+        <h2 class="case-section-title">
+            Demonstração
+        </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+        <p>
+            O MVP está publicado e pode ser acessado
+            diretamente pelo ambiente de produção.
+            Abaixo estão algumas das principais áreas
+            da aplicação em funcionamento.
+        </p>
+
+
+        <!-- ACESSO AO SISTEMA -->
+
+        <div class="demo-card">
+
+            <div
+            class="demo-card-icon"
+            aria-hidden="true"
+            >
+            ↗
+            </div>
+
+
+            <div class="demo-card-content">
+
+            <span class="demo-label">
+                Aplicação publicada
+            </span>
+
+            <h3>
+                ServiceFlow
+            </h3>
+
+            <p>
+                Navegue pela aplicação e conheça
+                o fluxo de gestão de clientes,
+                técnicos e ordens de serviço.
+            </p>
+
+
+            <div class="demo-meta">
+
+                <span>
+                React + FastAPI
+                </span>
+
+                <span>•</span>
+
+                <span>
+                Ambiente de produção
+                </span>
+
+            </div>
+
+
+            <a
+                class="button button-primary"
+                href="https://serviceflow-liard.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Abrir ServiceFlow ↗
+            </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUTO EM FUNCIONAMENTO -->
+
+        <div class="product-preview">
+
+            <div class="product-preview-heading">
+
+            <div>
+
+                <span class="demo-label">
+                Produto em funcionamento
+                </span>
+
+                <h3>
+                Algumas áreas da aplicação
+                </h3>
+
+            </div>
+
+            <p>
+                Interface utilizada para acompanhar
+                operação, ordens de serviço e
+                administração da plataforma.
+            </p>
+
+            </div>
+
+
+            <!-- IMAGEM PRINCIPAL -->
+
+            <figure class="product-shot product-shot-featured">
+
+            <div class="product-shot-frame">
+
+                <img
+                src="../assets/images/projects/serviceflow/dashboard.png"
+                alt="Dashboard do ServiceFlow com indicadores operacionais e financeiros"
+                loading="lazy"
+                >
+
+            </div>
+
+            <figcaption>
+
+                <strong>
+                Dashboard
+                </strong>
+
+                <span>
+                Indicadores operacionais e financeiros
+                calculados pelo backend.
+                </span>
+
+            </figcaption>
+
+            </figure>
+
+
+            <!-- IMAGENS SECUNDÁRIAS -->
+
+            <div class="product-shot-grid">
+
+
+            <figure class="product-shot">
+
+                <div class="product-shot-frame">
+
+                <img
+                    src="../assets/images/projects/serviceflow/ordens-servico.png"
+                    alt="Tela de ordens de serviço do ServiceFlow"
+                    loading="lazy"
+                >
+
+                </div>
+
+                <figcaption>
+
+                <strong>
+                    Ordens de serviço
+                </strong>
+
+                <span>
+                    Gestão do ciclo operacional,
+                    atribuições, prioridades e status.
+                </span>
+
+                </figcaption>
+
+            </figure>
+
+
+            <figure class="product-shot">
+
+                <div class="product-shot-frame">
+
+                <img
+                    src="../assets/images/projects/serviceflow/platform-admin.png"
+                    alt="Tela de administração da plataforma ServiceFlow"
+                    loading="lazy"
+                >
+
+                </div>
+
+                <figcaption>
+
+                <strong>
+                    Platform Admin
+                </strong>
+
+                <span>
+                    Administração global de empresas,
+                    planos e assinaturas.
+                </span>
+
+                </figcaption>
+
+            </figure>
+
+
+            </div>
+
+        </div>
+
+
+        <p class="video-caption">
+            As imagens utilizadas no portfólio devem conter
+            apenas informações fictícias ou anonimizadas.
+        </p>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+    <!-- 04 ARQUITETURA -->
+
+    <section
+      class="case-section"
+      id="arquitetura"
+    >
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            04
+          </p>
+
+          <h2 class="case-section-title">
+            Arquitetura Full Stack
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            O projeto utiliza um monólito modular,
+            mantendo separação entre interface,
+            API, regras de negócio e persistência.
+          </p>
+
+
+          <div class="architecture-box">
+
+            <div class="architecture-layer">
+
+              <strong>
+                Frontend
+              </strong>
+
+              <span>
+                React • TypeScript • Vite
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                HTTP / Server State
+              </strong>
+
+              <span>
+                Axios • TanStack Query
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                REST API
+              </strong>
+
+              <span>
+                FastAPI • Pydantic • JWT
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Service Layer
+              </strong>
+
+              <span>
+                Regras de negócio e orquestração
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Repository Layer
+              </strong>
+
+              <span>
+                Persistência e consultas
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Banco
+              </strong>
+
+              <span>
+                SQLAlchemy Async • PostgreSQL
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 05 MULTI TENANCY -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            05
+          </p>
+
+          <h2 class="case-section-title">
+            Multi-tenancy
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            A empresa é o tenant raiz do sistema e o isolamento
+            utiliza o identificador da empresa nas operações
+            relacionadas.
+          </p>
+
+
+          <div class="rule-grid">
+
+            <article class="rule-card">
+
+              <span>
+                Empresa A
+              </span>
+
+              <h3>
+                Contexto próprio
+              </h3>
+
+              <p>
+                Clientes, usuários, técnicos e ordens
+                pertencem ao tenant correspondente.
+              </p>
+
+            </article>
+
+
+            <article class="rule-card">
+
+              <span>
+                Empresa B
+              </span>
+
+              <h3>
+                Isolamento
+              </h3>
+
+              <p>
+                Recursos pertencentes a outros tenants
+                não são acessíveis pela aplicação.
+              </p>
+
+            </article>
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Numeração por empresa
+            </strong>
+
+            A unicidade da ordem utiliza a combinação
+            empresa + número da OS, permitindo que cada
+            tenant possua sua própria sequência.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 06 FSM -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            06
+          </p>
+
+          <h2 class="case-section-title">
+            Ciclo da ordem de serviço
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            A ordem de serviço possui uma máquina de estados
+            para impedir transições inconsistentes no fluxo
+            operacional.
+          </p>
+
+
+          <div class="architecture-box">
+
+            <div class="architecture-layer">
+
+              <strong>
+                DRAFT
+              </strong>
+
+              <span>
+                OS criada
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                SCHEDULED
+              </strong>
+
+              <span>
+                Atendimento programado
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                IN PROGRESS
+              </strong>
+
+              <span>
+                Serviço em execução
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                COMPLETED
+              </strong>
+
+              <span>
+                Serviço concluído
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                INVOICED
+              </strong>
+
+              <span>
+                Fluxo finalizado
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Cancelamento controlado
+            </strong>
+
+            DRAFT, SCHEDULED e IN PROGRESS também
+            podem ser canceladas. Estados finais
+            permanecem terminais.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 07 DASHBOARD -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            07
+          </p>
+
+          <h2 class="case-section-title">
+            Dashboard operacional e financeiro
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            Os indicadores são calculados no backend
+            através de um endpoint agregado, evitando
+            cálculos baseados em listagens parciais
+            no frontend.
+          </p>
+
+
+          <div class="feature-grid">
+
+            <article class="feature-card">
+
+              <h3>
+                Operação
+              </h3>
+
+              <p>
+                Ordens por status, evolução mensal
+                e ordens recentes.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Financeiro
+              </h3>
+
+              <p>
+                Valor total das OS, valor no mês
+                e evolução mensal dos valores.
+              </p>
+
+            </article>
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Regra financeira
+            </strong>
+
+            Ordens canceladas permanecem no histórico
+            operacional, mas não entram nos somatórios
+            financeiros.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 08 EXPORTAÇÃO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            08
+          </p>
+
+          <h2 class="case-section-title">
+            Exportação de dados
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            As ordens podem ser exportadas utilizando
+            filtros por período, status, técnico e cliente.
+          </p>
+
+
+          <div class="feature-grid">
+
+            <article class="feature-card">
+
+              <h3>
+                CSV
+              </h3>
+
+              <p>
+                UTF-8 com BOM, datas formatadas,
+                status traduzidos e proteção contra
+                formula injection.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                XLSX
+              </h3>
+
+              <p>
+                Arquivo Excel real com cabeçalho,
+                filtros, freeze panes, formatação
+                monetária e proteção contra formula injection.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 09 RBAC -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            09
+          </p>
+
+          <h2 class="case-section-title">
+            Autenticação e RBAC
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            O ServiceFlow utiliza autenticação JWT
+            com access token e refresh token, além
+            de controle de acesso baseado em função.
+          </p>
+
+
+          <div class="feature-grid">
+
+            <article class="feature-card">
+
+              <h3>
+                OWNER
+              </h3>
+
+              <p>
+                Acesso ao contexto administrativo
+                da empresa.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                ADMIN
+              </h3>
+
+              <p>
+                Acesso às funções operacionais
+                e administrativas permitidas.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                TECHNICIAN
+              </h3>
+
+              <p>
+                Visualiza e opera somente as ordens
+                atribuídas ao próprio técnico.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                VIEWER
+              </h3>
+
+              <p>
+                Perfil existente, mas ainda com política
+                funcional completa em roadmap.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 10 PLANOS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            10
+          </p>
+
+          <h2 class="case-section-title">
+            Planos e trial
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            O produto possui diferentes níveis de assinatura,
+            trial inicial e aplicação de limites conforme
+            o plano utilizado.
+          </p>
+
+
+          <div class="rule-grid">
+
+            <article class="rule-card">
+
+              <span>
+                Trial
+              </span>
+
+              <h3>
+                Aproximadamente 14 dias
+              </h3>
+
+              <p>
+                Novas empresas iniciam com acesso ao
+                plano PRO em período de avaliação.
+              </p>
+
+            </article>
+
+
+            <article class="rule-card">
+
+              <span>
+                FREE
+              </span>
+
+              <h3>
+                Limites aplicados no backend
+              </h3>
+
+              <p>
+                1 técnico, 5 clientes e 10 ordens
+                de serviço por mês.
+              </p>
+
+            </article>
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Upgrade comercial
+            </strong>
+
+            O usuário pode selecionar um plano superior
+            e iniciar o processo de upgrade por WhatsApp.
+            Gateway de pagamento permanece no roadmap.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 11 PLATFORM ADMIN -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            11
+          </p>
+
+          <h2 class="case-section-title">
+            Administração da plataforma
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            O ServiceFlow possui uma área administrativa
+            global separada do RBAC normal de cada tenant.
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              Listagem global de empresas.
+            </li>
+
+            <li>
+              Consulta de plano e status.
+            </li>
+
+            <li>
+              Visualização do período de trial.
+            </li>
+
+            <li>
+              Quantidade de usuários.
+            </li>
+
+            <li>
+              Alteração manual de plano.
+            </li>
+
+            <li>
+              Alteração de status da assinatura.
+            </li>
+
+          </ul>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Separação de responsabilidades
+            </strong>
+
+            Ser OWNER de uma empresa não significa
+            possuir privilégios globais sobre a plataforma.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 12 SEGURANÇA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            12
+          </p>
+
+          <h2 class="case-section-title">
+            Segurança
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <div class="tech-grid">
+
+            <span class="tech-item">
+              JWT
+            </span>
+
+            <span class="tech-item">
+              RBAC
+            </span>
+
+            <span class="tech-item">
+              CORS
+            </span>
+
+            <span class="tech-item">
+              CSP
+            </span>
+
+            <span class="tech-item">
+              HSTS
+            </span>
+
+            <span class="tech-item">
+              Rate Limiting
+            </span>
+
+            <span class="tech-item">
+              X-Frame-Options
+            </span>
+
+            <span class="tech-item">
+              Permissions-Policy
+            </span>
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              CSP bloqueante
+            </strong>
+
+            A Content Security Policy está ativa
+            em modo bloqueante e não utiliza
+            unsafe-eval.
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Limitação conhecida
+            </strong>
+
+            Os tokens ainda são armazenados em
+            localStorage e não existe revogação
+            server-side imediata nesta versão.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 13 TESTES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            13
+          </p>
+
+          <h2 class="case-section-title">
+            Testes e qualidade
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <div class="case-highlight">
+
+            <strong>
+              116 testes automatizados aprovados
+            </strong>
+
+            A suíte backend cobre autenticação,
+            autorização, multi-tenancy, usuários,
+            clientes, ordens, FSM, planos, trial,
+            dashboard, exportações e administração
+            da plataforma.
+
+          </div>
+
+
+          <ul class="case-list">
+
+            <li>
+              Autenticação e refresh token.
+            </li>
+
+            <li>
+              RBAC.
+            </li>
+
+            <li>
+              Isolamento multi-tenant.
+            </li>
+
+            <li>
+              Clientes e usuários.
+            </li>
+
+            <li>
+              Ordens de serviço e FSM.
+            </li>
+
+            <li>
+              Trial e limites de plano.
+            </li>
+
+            <li>
+              Dashboard.
+            </li>
+
+            <li>
+              CSV e XLSX.
+            </li>
+
+            <li>
+              Platform Admin.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 14 PERFORMANCE -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            14
+          </p>
+
+          <h2 class="case-section-title">
+            Performance
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            As páginas do frontend passaram a utilizar
+            carregamento por rota através de React.lazy
+            e Suspense.
+          </p>
+
+
+          <div class="rule-grid">
+
+            <article class="rule-card">
+
+              <span>
+                Antes
+              </span>
+
+              <h3>
+                ~1.060,76 kB
+              </h3>
+
+              <p>
+                Bundle principal antes da
+                implementação de code splitting.
+              </p>
+
+            </article>
+
+
+            <article class="rule-card">
+
+              <span>
+                Depois
+              </span>
+
+              <h3>
+                ~351,61 kB
+              </h3>
+
+              <p>
+                Bundle principal após a
+                otimização das rotas.
+              </p>
+
+            </article>
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Aproximadamente 67% de redução
+            </strong>
+
+            O JavaScript inicial foi reduzido
+            significativamente após a implementação
+            do code splitting.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 15 CI E DEPLOY -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            15
+          </p>
+
+          <h2 class="case-section-title">
+            CI e deploy
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+            O projeto utiliza GitHub Actions para
+            validar backend e frontend antes das
+            alterações integrarem o fluxo principal.
+          </p>
+
+
+          <div class="architecture-box">
+
+            <div class="architecture-layer">
+
+              <strong>
+                GitHub Actions
+              </strong>
+
+              <span>
+                Testes • Build • Audit • Migrations
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Frontend
+              </strong>
+
+              <span>
+                Vercel
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                Backend
+              </strong>
+
+              <span>
+                Render
+              </span>
+
+            </div>
+
+
+            <div class="architecture-arrow">↓</div>
+
+
+            <div class="architecture-layer">
+
+              <strong>
+                PostgreSQL
+              </strong>
+
+              <span>
+                Neon
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Ambiente validado
+            </strong>
+
+            Frontend, backend e banco estão publicados,
+            e o endpoint de health foi validado
+            com resposta HTTP 200.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 16 DECISÕES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            16
+          </p>
+
+          <h2 class="case-section-title">
+            Decisões de engenharia
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <div class="case-highlight">
+
+            <strong>
+              Monólito modular
+            </strong>
+
+            A aplicação preserva separação de
+            responsabilidades sem introduzir
+            microservices antes de existir
+            necessidade operacional real.
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Services e Repositories
+            </strong>
+
+            Regras de negócio e persistência
+            permanecem separadas dos endpoints HTTP.
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Multi-tenancy desde o domínio
+            </strong>
+
+            O isolamento por empresa faz parte
+            da estrutura central da aplicação.
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Dashboard calculado no backend
+            </strong>
+
+            Agregações operacionais e financeiras
+            não dependem de uma lista parcial
+            carregada pelo frontend.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 17 LIMITAÇÕES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            17
+          </p>
+
+          <h2 class="case-section-title">
+            Limitações conhecidas
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <ul class="case-list">
+
+            <li>
+              Tokens ainda persistidos no localStorage.
+            </li>
+
+            <li>
+              Não existe revogação server-side imediata.
+            </li>
+
+            <li>
+              Política completa do perfil VIEWER
+              ainda não foi formalizada.
+            </li>
+
+            <li>
+              Geração concorrente de números de OS
+              ainda possui oportunidade de hardening.
+            </li>
+
+            <li>
+              Alguns campos adicionais do contrato
+              de OS ainda precisam ser alinhados
+              com a persistência.
+            </li>
+
+            <li>
+              Gateway de pagamento ainda não faz
+              parte do MVP.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 18 ROADMAP -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            18
+          </p>
+
+          <h2 class="case-section-title">
+            Roadmap
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <ul class="case-list">
+
+            <li>
+              Revogação server-side de tokens.
+            </li>
+
+            <li>
+              Evolução para cookies HttpOnly
+              e políticas de sessão mais robustas.
+            </li>
+
+            <li>
+              Formalização completa do perfil VIEWER.
+            </li>
+
+            <li>
+              Estratégia concorrente mais robusta
+              para numeração das OS.
+            </li>
+
+            <li>
+              Gateway de pagamento.
+            </li>
+
+            <li>
+              Auditoria específica de acessibilidade.
+            </li>
+
+            <li>
+              Evolução contínua de observabilidade
+              e segurança.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FINAL -->
+
+    <section class="case-final">
+
+      <div class="container">
+
+        <div class="case-final-card">
+
+          <div>
+
+            <p class="eyebrow">
+              ServiceFlow
+            </p>
+
+            <h2>
+              Um projeto Full Stack construído
+              como produto.
+            </h2>
+
+            <p>
+              O ServiceFlow combina frontend,
+              API, banco de dados, regras de negócio,
+              multi-tenancy, segurança, testes,
+              otimização, CI e deploy.
+            </p>
+
+          </div>
+
+
+          <div class="case-final-actions">
+
+            <a
+              class="button button-primary"
+              href="https://serviceflow-liard.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abrir sistema ↗
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="index.html"
+            >
+              Outros projetos
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        Portfólio profissional —
+        Sistemas, Automação e Dados.
+      </p>
+
+      <a href="#topo">
+        Voltar ao topo ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- JS -->
+
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

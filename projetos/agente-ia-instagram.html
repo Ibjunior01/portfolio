@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Case Agente de IA para Instagram — automação de atendimento e qualificação de leads com Python, Flask, Google Gemini, Make.com, Docker e testes automatizados."
+  >
+
+  <meta
+    name="theme-color"
+    content="#f8fafc"
+  >
+
+  <title>
+    Agente de IA para Instagram | Case de Automação
+  </title>
+
+
+  <!-- TEMA -->
+
+  <script>
+    (() => {
+
+      const savedTheme =
+        localStorage.getItem("portfolio-theme");
+
+      const prefersDark =
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+
+      const theme =
+        savedTheme ||
+        (prefersDark ? "dark" : "light");
+
+      document.documentElement
+        .setAttribute(
+          "data-theme",
+          theme
+        );
+
+    })();
+  </script>
+
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/reset.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/base.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/layout.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/case-study.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/responsive.css"
+  >
+
+</head>
+
+
+<body id="topo">
+
+  <a
+    class="skip-link"
+    href="#conteudo-principal"
+  >
+    Ir para o conteúdo principal
+  </a>
+
+
+  <!-- HEADER -->
+
+  <header
+    class="site-header"
+    id="site-header"
+  ></header>
+
+
+  <main id="conteudo-principal">
+
+
+    <!-- HERO -->
+
+    <section class="case-hero">
+
+      <div class="container">
+
+
+        <div class="case-breadcrumb">
+
+          <a href="../index.html">
+            Home
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <a href="index.html">
+            Projetos
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <span>
+            Agente de IA para Instagram
+          </span>
+
+        </div>
+
+
+        <div class="case-hero-grid">
+
+
+          <div>
+
+            <p class="eyebrow">
+              Inteligência Artificial • Automação • API
+            </p>
+
+
+            <h1 class="case-title">
+              Agente de IA para Instagram
+            </h1>
+
+
+            <p class="case-summary">
+
+              Agente conversacional desenvolvido para
+              automatizar o atendimento e apoiar a
+              qualificação de leads originados no Instagram,
+              conectando automação, API REST e inteligência
+              artificial generativa em um fluxo seguro
+              e contextual.
+
+            </p>
+
+          </div>
+
+
+          <aside class="case-meta">
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Status
+              </span>
+
+              <span
+                class="status-badge status-concluido"
+              >
+                Concluído
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Backend
+              </span>
+
+              <span class="case-meta-value">
+                Python • Flask
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                IA
+              </span>
+
+              <span class="case-meta-value">
+                Google Gemini
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Automação
+              </span>
+
+              <span class="case-meta-value">
+                Make.com
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Infraestrutura
+              </span>
+
+              <span class="case-meta-value">
+                Docker • GitHub Actions
+              </span>
+
+            </div>
+
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 01 PROBLEMA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            01
+          </p>
+
+          <h2 class="case-section-title">
+            O problema
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Negócios que utilizam o Instagram como canal
+            de aquisição podem receber perguntas repetitivas,
+            solicitações fora do horário de atendimento
+            e contatos de potenciais clientes em diferentes
+            estágios de interesse.
+
+          </p>
+
+
+          <p>
+
+            Quando todo o atendimento depende de intervenção
+            manual, o tempo de resposta aumenta e oportunidades
+            comerciais podem ser perdidas.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Desafio central
+            </strong>
+
+            Automatizar parte da conversa sem limitar
+            o atendimento a respostas fixas e sem misturar
+            o contexto entre diferentes usuários.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 02 SOLUÇÃO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            02
+          </p>
+
+          <h2 class="case-section-title">
+            A solução
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O projeto utiliza uma API desenvolvida em Flask
+            para conectar o fluxo de automação ao Google Gemini.
+
+          </p>
+
+
+          <p>
+
+            Cada mensagem recebida é associada ao identificador
+            do usuário, processada pelo agente e enviada ao modelo
+            de inteligência artificial juntamente com o contexto
+            correspondente daquela conversa.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                Atendimento contextual
+              </h3>
+
+              <p>
+
+                O agente utiliza o histórico da conversa
+                para produzir respostas coerentes com
+                as interações anteriores.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Qualificação
+              </h3>
+
+              <p>
+
+                A conversa é estruturada para compreender
+                necessidades e identificar oportunidades
+                comerciais.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                API REST
+              </h3>
+
+              <p>
+
+                Uma API Flask recebe as mensagens
+                da camada de automação e centraliza
+                o processamento do agente.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Prompt Engineering
+              </h3>
+
+              <p>
+
+                Persona, regras de atendimento,
+                jornada de conversa e contexto
+                comercial são definidos de forma
+                estruturada.
+
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 03 ARQUITETURA -->
+
+    <section
+      class="case-section"
+      id="arquitetura"
+    >
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            03
+          </p>
+
+          <h2 class="case-section-title">
+            Arquitetura
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A solução foi dividida em camadas para evitar
+            que integração, regras do agente, memória
+            conversacional e configuração permanecessem
+            concentradas em um único arquivo.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                Instagram
+              </h3>
+
+              <p>
+
+                Canal de origem das interações
+                dos potenciais clientes.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Make.com
+              </h3>
+
+              <p>
+
+                Atua como camada de automação
+                e orquestração das mensagens.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Flask REST API
+              </h3>
+
+              <p>
+
+                Recebe e valida as requisições,
+                controla o acesso e encaminha
+                o processamento.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Agent Service
+              </h3>
+
+              <p>
+
+                Concentra a lógica responsável
+                pela interação entre contexto,
+                prompt e modelo de IA.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Memória
+              </h3>
+
+              <p>
+
+                Mantém o contexto separado
+                por identificador de usuário.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Google Gemini
+              </h3>
+
+              <p>
+
+                Modelo responsável pela geração
+                das respostas em linguagem natural.
+
+              </p>
+
+            </article>
+
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Fluxo principal
+            </strong>
+
+            Instagram → Make.com → Flask REST API →
+            memória da conversa → Agent Service →
+            Google Gemini → resposta.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 04 MEMÓRIA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            04
+          </p>
+
+          <h2 class="case-section-title">
+            Memória por usuário
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Um dos pontos críticos durante a evolução
+            do projeto foi o isolamento do histórico
+            conversacional.
+
+          </p>
+
+
+          <p>
+
+            A implementação inicial utilizava uma única
+            estrutura de histórico. Em uma aplicação com
+            múltiplos usuários, essa abordagem poderia
+            causar compartilhamento de contexto entre
+            conversas diferentes.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Solução adotada
+            </strong>
+
+            Cada conversa passou a ser identificada
+            por um <code>user_id</code>, mantendo
+            históricos independentes para cada usuário.
+
+          </div>
+
+
+          <p>
+
+            Essa mudança aumentou a segurança,
+            a previsibilidade das respostas e a
+            consistência do contexto enviado ao modelo.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 05 SEGURANÇA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            05
+          </p>
+
+          <h2 class="case-section-title">
+            Segurança da API
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A API recebeu controles para reduzir
+            requisições inválidas, exposição de
+            informações internas e utilização
+            indevida do serviço.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                API Key
+              </h3>
+
+              <p>
+
+                O acesso ao endpoint protegido
+                depende de uma chave configurada
+                por variável de ambiente.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Validação
+              </h3>
+
+              <p>
+
+                Campos obrigatórios e conteúdo
+                das requisições são verificados
+                antes do processamento.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Rate limiting
+              </h3>
+
+              <p>
+
+                Limites de requisição ajudam
+                a proteger o serviço contra abuso
+                e consumo excessivo da API de IA.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Erros controlados
+              </h3>
+
+              <p>
+
+                Exceções internas não são
+                retornadas diretamente para
+                o usuário da API.
+
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 06 RESILIÊNCIA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            06
+          </p>
+
+          <h2 class="case-section-title">
+            Resiliência
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Integrações com modelos externos podem
+            apresentar indisponibilidade temporária,
+            limites de uso ou falhas de comunicação.
+
+          </p>
+
+
+          <p>
+
+            O agente possui tratamento de erros,
+            estratégia de retry e mensagens de fallback,
+            evitando que uma falha técnica seja exposta
+            diretamente ao usuário.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              tratamento de indisponibilidade do Gemini;
+            </li>
+
+            <li>
+              novas tentativas controladas;
+            </li>
+
+            <li>
+              respostas de fallback;
+            </li>
+
+            <li>
+              endpoint de health check;
+            </li>
+
+            <li>
+              logging das ocorrências internas.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 07 TESTES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            07
+          </p>
+
+          <h2 class="case-section-title">
+            Qualidade e testes
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O projeto possui testes automatizados
+            utilizando Pytest para validar os principais
+            comportamentos da API sem depender de chamadas
+            reais ao serviço do Gemini durante a suíte.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              health check;
+            </li>
+
+            <li>
+              autenticação da API;
+            </li>
+
+            <li>
+              validação de payload;
+            </li>
+
+            <li>
+              campos obrigatórios;
+            </li>
+
+            <li>
+              fluxo de requisição válida;
+            </li>
+
+            <li>
+              isolamento entre usuários;
+            </li>
+
+            <li>
+              comportamento diante de falhas externas.
+            </li>
+
+          </ul>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Qualidade de código
+            </strong>
+
+            Pytest é utilizado nos testes automatizados
+            e Ruff auxilia na padronização e análise
+            estática do código Python.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 08 DEVOPS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            08
+          </p>
+
+          <h2 class="case-section-title">
+            Docker e CI
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O ambiente da aplicação pode ser reproduzido
+            por container, reduzindo diferenças entre
+            desenvolvimento e execução.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                Docker
+              </h3>
+
+              <p>
+
+                Containerização da API e de suas
+                dependências para execução padronizada.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Gunicorn
+              </h3>
+
+              <p>
+
+                Servidor WSGI utilizado para execução
+                da aplicação em ambiente de produção.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                GitHub Actions
+              </h3>
+
+              <p>
+
+                Pipeline automatizado para validação
+                do projeto no repositório.
+
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Ruff + Pytest
+              </h3>
+
+              <p>
+
+                Verificação da qualidade do código
+                e execução automatizada dos testes.
+
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 09 DECISÕES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            09
+          </p>
+
+          <h2 class="case-section-title">
+            Decisões de engenharia
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Flask em vez de uma arquitetura maior
+            </strong>
+
+            O escopo da aplicação não exigia um framework
+            mais complexo. Flask mantém a API pequena,
+            clara e adequada à responsabilidade do serviço.
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Make.com como orquestrador
+            </strong>
+
+            A automação da plataforma social permanece
+            desacoplada da lógica do agente, permitindo
+            que a API Python se concentre em validação,
+            contexto e inteligência artificial.
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Arquitetura proporcional
+            </strong>
+
+            O código foi separado por responsabilidades
+            sem introduzir camadas e abstrações que não
+            agregariam valor ao tamanho atual da solução.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 10 LIMITAÇÕES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            10
+          </p>
+
+          <h2 class="case-section-title">
+            Limitações e evolução
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A versão atual mantém a memória das conversas
+            localmente no processo da aplicação.
+
+          </p>
+
+
+          <p>
+
+            Essa abordagem é suficiente para o estágio
+            atual do projeto, porém não é indicada para
+            múltiplas instâncias ou persistência de
+            sessões em ambientes distribuídos.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Próxima evolução
+            </strong>
+
+            Utilizar Redis com TTL para armazenar sessões
+            temporárias e permitir que diferentes instâncias
+            da aplicação compartilhem o contexto das conversas.
+
+          </div>
+
+
+          <p>
+
+            Redis permanece como roadmap e não faz parte
+            da implementação atual.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 11 RESULTADO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+
+        <div>
+
+          <p class="case-section-number">
+            11
+          </p>
+
+          <h2 class="case-section-title">
+            Resultado
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O projeto evoluiu de um protótipo simples
+            de integração com inteligência artificial
+            para uma API estruturada, testada e preparada
+            para operar como componente de um fluxo
+            automatizado de atendimento.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              atendimento baseado em linguagem natural;
+            </li>
+
+            <li>
+              contexto isolado por usuário;
+            </li>
+
+            <li>
+              qualificação de potenciais clientes;
+            </li>
+
+            <li>
+              integração desacoplada via API REST;
+            </li>
+
+            <li>
+              controles básicos de segurança;
+            </li>
+
+            <li>
+              testes automatizados;
+            </li>
+
+            <li>
+              execução containerizada;
+            </li>
+
+            <li>
+              pipeline de integração contínua.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FINAL -->
+
+    <section class="case-final">
+
+      <div class="container">
+
+        <div class="case-final-card">
+
+
+          <div>
+
+            <p class="eyebrow">
+              Automação & Inteligência Artificial
+            </p>
+
+            <h2>
+              IA aplicada a um processo de negócio.
+            </h2>
+
+            <p>
+
+              O projeto combina automação, APIs,
+              engenharia de software e inteligência
+              artificial para resolver uma necessidade
+              concreta de atendimento digital.
+
+            </p>
+
+          </div>
+
+
+          <div class="case-final-actions">
+
+            <a
+              class="button button-primary"
+              href="index.html"
+            >
+              Ver projetos
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="../index.html"
+            >
+              Voltar à Home
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        Portfólio profissional —
+        Sistemas, Automação e Dados.
+      </p>
+
+      <a href="#topo">
+        Voltar ao topo ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JS -->
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>
