@@ -113,7 +113,7 @@ const portfolioProjects = [
 
     slug: "gestao-estudos.html",
 
-    featured: true
+    featured: false
   },
 
 
@@ -139,7 +139,7 @@ const portfolioProjects = [
 
     slug: "whatsapp-scheduler.html",
 
-    featured: true
+    featured: false
   },
 
 // 06 Manutenção

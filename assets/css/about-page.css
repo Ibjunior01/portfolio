@@ -581,3 +581,22 @@
   }
 
 }
+
+
+/* ========================================
+   CTA FINAL — TEMA CLARO
+======================================== */
+
+[data-theme="light"] .about-final-card {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme="light"] .about-final-card h2 {
+  color: var(--color-text);
+}
+
+[data-theme="light"] .about-final-card p {
+  color: var(--color-text-muted);
+}

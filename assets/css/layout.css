@@ -289,6 +289,41 @@
   font-size: var(--text-sm);
 }
 
+/* ========================================
+   SEÇÃO DE DESTAQUE — TEMA CLARO
+======================================== */
+
+[data-theme="light"] .section-dark {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-muted);
+}
+
+[data-theme="light"] .section-heading-light h2 {
+  color: var(--color-text);
+}
+
+[data-theme="light"] .section-heading-light p {
+  color: var(--color-text-muted);
+}
+
+[data-theme="light"] .process-grid li {
+  border-color: var(--color-border);
+  background: var(--color-surface);
+}
+
+[data-theme="light"] .process-grid li > span {
+  color: var(--color-primary);
+}
+
+[data-theme="light"] .process-grid h3 {
+  color: var(--color-text);
+}
+
+[data-theme="light"] .process-grid p {
+  color: var(--color-text-muted);
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
