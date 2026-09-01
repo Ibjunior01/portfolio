@@ -4,6 +4,11 @@ Portfólio pessoal desenvolvido para apresentar projetos de **Desenvolvimento Fu
 
 O projeto foi construído com HTML, CSS e JavaScript puro, priorizando simplicidade, performance, acessibilidade, responsividade e facilidade de manutenção.
 
+## Portfólio online
+
+🌐 **Acesse:** [ibermon-portfolio.vercel.app](https://ibermon-portfolio.vercel.app/)
+
+O projeto está publicado na Vercel com deploy automático a partir da branch `main`.
 ---
 
 ## Objetivo
@@ -410,18 +415,39 @@ http://localhost:5500
 
 ## Publicação
 
-A publicação do portfólio está na etapa final de configuração.
+O portfólio está publicado na Vercel:
 
-Após o deploy definitivo serão configurados e validados:
+**Produção:**  
+[https://ibermon-portfolio.vercel.app/](https://ibermon-portfolio.vercel.app/)
 
-- URL canônica;
+O deploy está integrado ao GitHub. Novos commits enviados para a branch `main` geram automaticamente uma nova versão de produção.
+
+A versão publicada possui:
+
+- HTTPS;
+- deploy contínuo via GitHub;
+- URLs canônicas;
 - Open Graph;
-- metadados para compartilhamento;
+- Twitter Cards;
+- dados estruturados Schema.org;
 - `robots.txt`;
 - `sitemap.xml`;
+- imagem de compartilhamento social;
 - auditoria Lighthouse.
 
-A URL pública será adicionada a este README após o deploy.
+---
+## Qualidade
+
+A versão publicada foi auditada com Google Lighthouse, atingindo:
+
+| Categoria | Resultado |
+|---|---:|
+| Performance | 100 |
+| Accessibility | 100 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+Os testes foram realizados diretamente no ambiente publicado.
 
 ---
 
