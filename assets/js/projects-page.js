@@ -39,6 +39,7 @@ function createCatalogCard(project) {
       <a
         class="text-link"
         href="${project.slug}"
+        aria-label="Ver case do projeto ${project.name}"
       >
         Ver case
         <span aria-hidden="true">→</span>

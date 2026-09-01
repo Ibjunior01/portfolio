@@ -4,6 +4,7 @@ function createProjectCard(project, basePath = "projetos/") {
       <a
         class="text-link"
         href="${basePath}${project.slug}"
+        aria-label="Ver case do projeto ${project.name}"
       >
         Ver case
         <span aria-hidden="true">→</span>
