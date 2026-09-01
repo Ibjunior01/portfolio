@@ -137,7 +137,8 @@ const portfolioProjects = [
       "MVC"
     ],
 
-    slug: "whatsapp-scheduler.html",
+    //slug: "whatsapp-scheduler.html",
+      slug: null,
 
     featured: false
   },

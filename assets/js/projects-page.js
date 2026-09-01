@@ -29,6 +29,11 @@ function renderProjectsCatalog(filter = "todos") {
 
 
 function createCatalogCard(project) {
+  const unavailableCaseLabel =
+    project.statusKey === "desenvolvimento"
+      ? "Case em desenvolvimento"
+      : "Case em planejamento";
+
   const action = project.slug
     ? `
       <a
@@ -41,7 +46,7 @@ function createCatalogCard(project) {
     `
     : `
       <span class="project-roadmap-label">
-        Case em planejamento
+        ${unavailableCaseLabel}
       </span>
     `;
 
