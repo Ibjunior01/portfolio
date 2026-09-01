@@ -1,24 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Desenvolvedor Full Stack com projetos em Python, JavaScript, React, APIs, automação, inteligência artificial e dados aplicados a problemas reais.">
-  <meta name="theme-color" content="#0f172a">
 
-  <title>Portfólio | Desenvolvedor Full Stack, Automação e IA</title>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Portfólio | Desenvolvedor Full Stack, Automação e IA
+  </title>
+
+  <meta
+    name="description"
+    content="Portfólio de Desenvolvedor Full Stack com projetos em Python, JavaScript, React, APIs, automação, inteligência artificial e dados aplicados a problemas reais."
+  >
+
+  <meta
+    name="theme-color"
+    content="#0f172a"
+  >
+
+
+  <!-- SEO -->
+
+  <link
+    rel="canonical"
+    href="https://ibermon-portfolio.vercel.app/"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+
+  <!-- OPEN GRAPH -->
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <meta
+    property="og:locale"
+    content="pt_BR"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Portfólio Ibermon Junior"
+  >
+
+  <meta
+    property="og:title"
+    content="Ibermon Junior | Desenvolvedor Full Stack, Automação e IA"
+  >
+
+  <meta
+    property="og:description"
+    content="Portfólio profissional com projetos em desenvolvimento Full Stack, APIs, automação, inteligência artificial e dados aplicados a problemas reais."
+  >
+
+  <meta
+    property="og:url"
+    content="https://ibermon-portfolio.vercel.app/"
+  >
+
+  <meta
+    property="og:image"
+    content="https://ibermon-portfolio.vercel.app/assets/images/og/portfolio-og.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Portfólio de Ibermon Junior — Desenvolvedor Full Stack, Automação, IA e Dados"
+  >
+
+
+  <!-- X / TWITTER -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="Ibermon Junior | Desenvolvedor Full Stack, Automação e IA"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Projetos em Full Stack, APIs, automação, inteligência artificial e dados aplicados a problemas reais."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://ibermon-portfolio.vercel.app/assets/images/og/portfolio-og.png"
+  >
+
+  <meta
+    name="twitter:image:alt"
+    content="Portfólio de Ibermon Junior — Desenvolvedor Full Stack, Automação, IA e Dados"
+  >
+
+
+  <!-- TEMA -->
 
   <script>
-  (() => {
-    const savedTheme = localStorage.getItem("portfolio-theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    (() => {
+      const savedTheme =
+        localStorage.getItem("portfolio-theme");
 
-    const theme = savedTheme || (prefersDark ? "dark" : "light");
+      const prefersDark =
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
 
-    document.documentElement.setAttribute("data-theme", theme);
-  })();
+      const theme =
+        savedTheme ||
+        (prefersDark ? "dark" : "light");
+
+      document.documentElement.setAttribute(
+        "data-theme",
+        theme
+      );
+    })();
   </script>
 
+
+  <!-- CSS -->
 
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/reset.css">
@@ -26,6 +141,38 @@
   <link rel="stylesheet" href="assets/css/components.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+  <!-- DADOS ESTRUTURADOS -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ibermon Junior",
+    "url": "https://ibermon-portfolio.vercel.app/",
+    "sameAs": [
+      "https://github.com/Ibjunior01",
+      "https://linkedin.com/in/ibermonjunior"
+    ],
+    "jobTitle": "Desenvolvedor Full Stack",
+    "knowsAbout": [
+      "Python",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "FastAPI",
+      "Flask",
+      "PostgreSQL",
+      "MySQL",
+      "APIs REST",
+      "Automação",
+      "Inteligência Artificial",
+      "Análise de Dados"
+    ]
+  }
+  </script>
+
 </head>
 
 <body id="topo">
