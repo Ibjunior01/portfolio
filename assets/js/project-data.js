@@ -66,7 +66,40 @@ const portfolioProjects = [
   featured: true
   },
 
-// 03 — SISTEMA OPERACIONAL / FINANCEIRO
+// 03 — DataBoard → Dados + Flask + Engenharia de Software
+{
+  id: "databoard-reports",
+
+  name: "DataBoard Reports",
+
+  category: "Dados",
+
+  type: "Dados • Full Stack • Automação",
+
+  status: "CONCLUÍDO",
+
+  statusKey: "concluido",
+
+  statusClass: "status-concluido",
+
+  problem:
+    "Transformar arquivos CSV e Excel em análises, indicadores, gráficos e relatórios sem exigir uma ordem fixa de colunas ou um schema pré-definido.",
+
+  stack: [
+    "Python",
+    "Flask",
+    "Pandas",
+    "Plotly",
+    "SQLAlchemy",
+    "Docker"
+  ],
+
+  slug: "databoard-reports.html",
+
+  featured: true
+},
+
+// 04 — SISTEMA OPERACIONAL / FINANCEIRO
   {
     id: "pilates",
     name: "Gestão para Estúdio de Pilates",
@@ -88,7 +121,7 @@ const portfolioProjects = [
 
     slug: "pilates.html",
 
-    featured: true
+    featured: false
   },
 
 // 04 — AUTOMAÇÃO GOOGLE WORKSPACE

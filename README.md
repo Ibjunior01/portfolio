@@ -58,6 +58,41 @@ O projeto inclui gestão de usuários, empresas, ordens de serviço, prioridades
 
 ---
 
+### DataBoard Reports
+
+Aplicação web para análise automática de arquivos CSV e Excel, desenvolvida para interpretar estruturas tabulares sem depender de uma ordem fixa de colunas.
+
+O sistema identifica semanticamente campos como datas, valores monetários, percentuais, quantidades, categorias e identificadores, utilizando essas informações para gerar análises, indicadores, gráficos e relatórios PDF.
+
+**Principais recursos:**
+
+- upload de CSV, XLS e XLSX;
+- detecção automática de cabeçalho;
+- inferência semântica das colunas;
+- análise automática com Pandas;
+- gráficos com Plotly;
+- dashboard com indicadores de qualidade dos dados;
+- histórico de uploads e relatórios;
+- geração de PDF;
+- tema claro e escuro;
+- responsividade;
+- proteção CSRF e validação de uploads;
+- Docker e Gunicorn;
+- CI com GitHub Actions;
+- 206 testes automatizados aprovados.
+
+**Stack:** Python, Flask, Pandas, Plotly, SQLAlchemy, ReportLab, Bootstrap, Pytest, Ruff, Docker e GitHub Actions.
+
+**Status:** Concluído
+
+**Repositório:**  
+https://github.com/Ibjunior01/databoard-reports
+
+**Case:**  
+https://ibermon-portfolio.vercel.app/projetos/databoard-reports.html
+
+---
+
 ### Agente de IA para Instagram
 
 API desenvolvida para integrar um fluxo automatizado de atendimento e qualificação de leads com inteligência artificial generativa.

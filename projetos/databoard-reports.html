@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    DataBoard Reports | Análise Automática de Planilhas
+  </title>
+
+  <meta
+    name="description"
+    content="Case DataBoard Reports: aplicação web em Python e Flask para análise automática de CSV e Excel, inferência semântica, dashboards, gráficos e relatórios PDF."
+  >
+
+  <meta
+    name="theme-color"
+    content="#0f172a"
+  >
+
+
+  <!-- SEO -->
+
+  <link
+    rel="canonical"
+    href="https://ibermon-portfolio.vercel.app/projetos/databoard-reports.html"
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+
+  <!-- OPEN GRAPH -->
+
+  <meta
+    property="og:type"
+    content="article"
+  >
+
+  <meta
+    property="og:locale"
+    content="pt_BR"
+  >
+
+  <meta
+    property="og:site_name"
+    content="Portfólio Ibermon Junior"
+  >
+
+  <meta
+    property="og:title"
+    content="DataBoard Reports | Análise Automática de Planilhas"
+  >
+
+  <meta
+    property="og:description"
+    content="Aplicação web com Flask e Pandas capaz de interpretar CSV e Excel sem depender de uma ordem fixa de colunas, gerando análises, gráficos e relatórios."
+  >
+
+  <meta
+    property="og:url"
+    content="https://ibermon-portfolio.vercel.app/projetos/databoard-reports.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://ibermon-portfolio.vercel.app/assets/images/og/portfolio-og.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Portfólio de Ibermon Junior — Desenvolvedor Full Stack, Automação, IA e Dados"
+  >
+
+
+  <!-- X / TWITTER -->
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="DataBoard Reports | Análise Automática de Planilhas"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Flask, Pandas, Plotly, SQLAlchemy, PDF, Docker, CI e inferência semântica aplicada à análise de planilhas."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://ibermon-portfolio.vercel.app/assets/images/og/portfolio-og.png"
+  >
+
+  <meta
+    name="twitter:image:alt"
+    content="Portfólio de Ibermon Junior — Desenvolvedor Full Stack, Automação, IA e Dados"
+  >
+
+
+  <!-- TEMA -->
+
+  <script>
+    (() => {
+
+      const savedTheme =
+        localStorage.getItem("portfolio-theme");
+
+      const prefersDark =
+        window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+
+      const theme =
+        savedTheme ||
+        (prefersDark ? "dark" : "light");
+
+      document.documentElement
+        .setAttribute(
+          "data-theme",
+          theme
+        );
+
+    })();
+  </script>
+
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/variables.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/reset.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/base.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/components.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/layout.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/case-study.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../assets/css/responsive.css"
+  >
+
+
+  <!-- DADOS ESTRUTURADOS -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "DataBoard Reports",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Aplicação web para análise automática de arquivos CSV e Excel, com inferência semântica, dashboards, gráficos e geração de relatórios PDF.",
+    "url": "https://ibermon-portfolio.vercel.app/projetos/databoard-reports.html",
+    "sameAs": [
+      "https://github.com/Ibjunior01/databoard-reports"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Ibermon Junior",
+      "url": "https://ibermon-portfolio.vercel.app/"
+    },
+    "programmingLanguage": [
+      "Python",
+      "JavaScript"
+    ]
+  }
+  </script>
+
+</head>
+
+
+<body id="topo">
+
+  <a
+    class="skip-link"
+    href="#conteudo-principal"
+  >
+    Ir para o conteúdo principal
+  </a>
+
+
+  <header
+    class="site-header"
+    id="site-header"
+  ></header>
+
+
+  <main id="conteudo-principal">
+
+
+    <!-- HERO -->
+
+    <section class="case-hero">
+
+      <div class="container">
+
+
+        <div class="case-breadcrumb">
+
+          <a href="../index.html">
+            Home
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <a href="index.html">
+            Projetos
+          </a>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <span>
+            DataBoard Reports
+          </span>
+
+        </div>
+
+
+        <div class="case-hero-grid">
+
+
+          <div>
+
+            <p class="eyebrow">
+              Dados • Desenvolvimento Web • Automação
+            </p>
+
+
+            <h1 class="case-title">
+              DataBoard Reports
+            </h1>
+
+
+            <p class="case-summary">
+
+              Aplicação web desenvolvida para transformar
+              arquivos CSV e Excel em análises, indicadores,
+              gráficos e relatórios PDF, utilizando inferência
+              semântica para compreender a estrutura dos dados
+              sem depender de uma ordem fixa de colunas.
+
+            </p>
+
+
+            <div
+              class="hero-actions"
+              style="margin-top: var(--space-8);"
+            >
+
+              <a
+                class="button button-primary"
+                href="https://github.com/Ibjunior01/databoard-reports"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver código no GitHub ↗
+              </a>
+
+              <a
+                class="button button-secondary"
+                href="#arquitetura"
+              >
+                Ver arquitetura
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <aside class="case-meta">
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Status
+              </span>
+
+              <span
+                class="status-badge status-concluido"
+              >
+                Concluído
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Backend
+              </span>
+
+              <span class="case-meta-value">
+                Python • Flask
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Dados
+              </span>
+
+              <span class="case-meta-value">
+                Pandas • SQLAlchemy
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Visualização
+              </span>
+
+              <span class="case-meta-value">
+                Plotly • ReportLab
+              </span>
+
+            </div>
+
+
+            <div class="case-meta-item">
+
+              <span class="case-meta-label">
+                Qualidade
+              </span>
+
+              <span class="case-meta-value">
+                206 testes • CI
+              </span>
+
+            </div>
+
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 01 PROBLEMA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            01
+          </p>
+
+          <h2 class="case-section-title">
+            O problema
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Planilhas utilizadas em diferentes contextos
+            raramente seguem uma estrutura única.
+            Colunas podem aparecer em ordens diferentes,
+            possuir nomes distintos ou armazenar datas,
+            moedas e percentuais em formatos variados.
+
+          </p>
+
+
+          <p>
+
+            Exigir um modelo fixo de arquivo reduziria
+            a utilidade da aplicação e transferiria para
+            o usuário a responsabilidade de adaptar os
+            dados antes de cada análise.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Desafio central
+            </strong>
+
+            Criar uma aplicação capaz de compreender
+            automaticamente arquivos tabulares e gerar
+            análises úteis sem depender da posição física
+            das colunas.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 02 SOLUÇÃO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            02
+          </p>
+
+          <h2 class="case-section-title">
+            A solução
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O DataBoard Reports recebe arquivos CSV,
+            XLS e XLSX, identifica sua estrutura,
+            processa os dados com Pandas e utiliza
+            uma camada semântica para classificar
+            o papel provável de cada coluna.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                Upload inteligente
+              </h3>
+
+              <p>
+                Leitura de CSV e Excel com validação,
+                nomes físicos únicos e tratamento de
+                arquivos inválidos.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Inferência semântica
+              </h3>
+
+              <p>
+                Classificação das colunas a partir
+                de nome, conteúdo, tipo, cardinalidade
+                e padrões encontrados nos dados.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Dashboard automático
+              </h3>
+
+              <p>
+                KPIs, qualidade dos dados, estrutura
+                semântica, gráficos e prévia da planilha.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Relatórios PDF
+              </h3>
+
+              <p>
+                Geração e histórico de relatórios
+                contendo resumo, estatísticas,
+                prévia e gráficos.
+              </p>
+
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 03 INFERÊNCIA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            03
+          </p>
+
+          <h2 class="case-section-title">
+            Inferência semântica
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O principal diferencial técnico do projeto
+            é um motor responsável por interpretar
+            semanticamente as colunas recebidas.
+
+          </p>
+
+
+          <p>
+
+            A análise não utiliza apenas o
+            <code>dtype</code> do Pandas. Também considera
+            nome da coluna, amostras dos valores,
+            padrões textuais, cardinalidade, proporção
+            de valores únicos e valores ausentes.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+              <h3>IDENTIFIER</h3>
+              <p>IDs, códigos, CEPs e campos equivalentes.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>DATE / DATETIME</h3>
+              <p>Datas e registros temporais.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>CURRENCY</h3>
+              <p>Valores monetários e faturamento.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>PERCENTAGE</h3>
+              <p>Taxas, margens e percentuais.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>QUANTITY / NUMERIC</h3>
+              <p>Métricas numericamente válidas.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>CATEGORY / TEXT</h3>
+              <p>Dimensões categóricas e textos livres.</p>
+            </article>
+
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Regra central
+            </strong>
+
+            A posição da coluna não determina seu significado.
+            Identificadores numéricos também não são tratados
+            automaticamente como métricas.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 04 CABEÇALHO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            04
+          </p>
+
+          <h2 class="case-section-title">
+            Estruturas não padronizadas
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O carregador também considera que o cabeçalho
+            real de uma tabela pode não estar localizado
+            obrigatoriamente na primeira linha do arquivo.
+
+          </p>
+
+
+          <p>
+
+            O benchmark do projeto inclui uma planilha
+            com título e subtítulo antes da estrutura
+            tabular, exigindo a identificação automática
+            do cabeçalho na terceira linha.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Resultado
+            </strong>
+
+            Arquivos equivalentes com colunas em ordens
+            diferentes mantêm a mesma classificação
+            semântica.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 05 GRÁFICOS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            05
+          </p>
+
+          <h2 class="case-section-title">
+            Gráficos automáticos
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A escolha das visualizações também utiliza
+            a classificação semântica para evitar gráficos
+            tecnicamente possíveis, mas analiticamente inúteis.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              data + métrica → série temporal;
+            </li>
+
+            <li>
+              categoria + métrica → barras agregadas;
+            </li>
+
+            <li>
+              uma métrica → histograma;
+            </li>
+
+            <li>
+              duas métricas → dispersão quando aplicável;
+            </li>
+
+            <li>
+              identificadores não são usados como métricas;
+            </li>
+
+            <li>
+              textos livres e categorias de alta cardinalidade
+              são evitados automaticamente.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 06 DASHBOARD -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            06
+          </p>
+
+          <h2 class="case-section-title">
+            Dashboard
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O dashboard funciona como uma central de análise
+            para cada arquivo processado.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+              <h3>KPIs</h3>
+              <p>Registros, colunas, métricas e categorias.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>Qualidade</h3>
+              <p>Completude e quantidade de valores ausentes.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>Estrutura</h3>
+              <p>Visualização dos tipos semânticos detectados.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>Ações</h3>
+              <p>PDF, detalhes, histórico e novos uploads.</p>
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 07 HISTÓRICO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            07
+          </p>
+
+          <h2 class="case-section-title">
+            Histórico e persistência
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            Uploads e relatórios são persistidos por meio
+            de SQLAlchemy, permitindo recuperar arquivos
+            anteriores e reprocessar análises sem realizar
+            um novo upload.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              histórico de uploads;
+            </li>
+
+            <li>
+              página individual de detalhes;
+            </li>
+
+            <li>
+              reprocessamento;
+            </li>
+
+            <li>
+              histórico de relatórios;
+            </li>
+
+            <li>
+              download posterior;
+            </li>
+
+            <li>
+              exclusão física e persistente com cascata.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 08 ARQUITETURA -->
+
+    <section
+      class="case-section"
+      id="arquitetura"
+    >
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            08
+          </p>
+
+          <h2 class="case-section-title">
+            Arquitetura
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A aplicação utiliza Flask Application Factory
+            e separação entre apresentação, rotas,
+            serviços e persistência.
+
+          </p>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+
+              <h3>
+                Apresentação
+              </h3>
+
+              <p>
+                Jinja, HTML, CSS, JavaScript,
+                Bootstrap e Plotly.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Rotas
+              </h3>
+
+              <p>
+                Recebem requisições HTTP e coordenam
+                os serviços da aplicação.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Services
+              </h3>
+
+              <p>
+                Carregamento, inferência, análise,
+                gráficos, histórico e relatórios.
+              </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+              <h3>
+                Persistência
+              </h3>
+
+              <p>
+                SQLAlchemy, SQLite e caminhos de
+                armazenamento configuráveis.
+              </p>
+
+            </article>
+
+
+          </div>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Decisão arquitetural
+            </strong>
+
+            Flask e SQLite foram mantidos porque atendem
+            ao escopo atual sem introduzir complexidade
+            desnecessária.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 09 SEGURANÇA -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            09
+          </p>
+
+          <h2 class="case-section-title">
+            Segurança
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+              <h3>Upload seguro</h3>
+              <p>Extensão validada, limite e nomes físicos com UUID.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>CSRF</h3>
+              <p>Proteção nas ações destrutivas e formulários.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>Configuração</h3>
+              <p>SECRET_KEY obrigatória no ambiente de produção.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>HTTP Headers</h3>
+              <p>Proteções básicas contra sniffing, framing e permissões.</p>
+            </article>
+
+
+          </div>
+
+
+          <p>
+
+            CSP e HSTS foram conscientemente mantidos fora
+            da versão atual: CSP exige compatibilização
+            com dependências de visualização e HSTS depende
+            de um ambiente HTTPS real.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 10 TESTES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            10
+          </p>
+
+          <h2 class="case-section-title">
+            Testes e qualidade
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <div class="case-highlight">
+
+            <strong>
+              206 testes automatizados aprovados
+            </strong>
+
+            A suíte cobre upload, análise, benchmark,
+            inferência semântica, gráficos, histórico,
+            PDF, segurança, timezone e dashboard.
+
+          </div>
+
+
+          <div class="feature-grid">
+
+
+            <article class="feature-card">
+              <h3>Pytest</h3>
+              <p>Validação automatizada dos fluxos principais.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>Ruff</h3>
+              <p>Lint e padronização do código Python.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>Benchmark</h3>
+              <p>Planilha oficial de regressão para autodetecção.</p>
+            </article>
+
+
+            <article class="feature-card">
+              <h3>GitHub Actions</h3>
+              <p>Testes, Ruff e build Docker executados no CI.</p>
+            </article>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 11 DEVOPS -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            11
+          </p>
+
+          <h2 class="case-section-title">
+            Docker e CI
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O ambiente de execução foi preparado para ser
+            reproduzível e compatível com uma futura
+            publicação em infraestrutura persistente.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              Docker com Python slim;
+            </li>
+
+            <li>
+              execução com usuário não-root;
+            </li>
+
+            <li>
+              Gunicorn;
+            </li>
+
+            <li>
+              porta configurável;
+            </li>
+
+            <li>
+              caminhos de upload, relatórios e banco configuráveis;
+            </li>
+
+            <li>
+              GitHub Actions em push e pull request.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 12 UX -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            12
+          </p>
+
+          <h2 class="case-section-title">
+            Interface e acessibilidade
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O frontend foi desenvolvido para funcionar
+            em desktop, tablet e dispositivos móveis,
+            incluindo tabelas responsivas e adaptação
+            do histórico para cards em telas menores.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              tema claro e escuro;
+            </li>
+
+            <li>
+              persistência da preferência;
+            </li>
+
+            <li>
+              suporte a prefers-color-scheme;
+            </li>
+
+            <li>
+              sincronização do tema com Plotly;
+            </li>
+
+            <li>
+              navegação por teclado;
+            </li>
+
+            <li>
+              skip link e foco visível;
+            </li>
+
+            <li>
+              Accessibility 100 em validação local.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 13 LIMITAÇÕES -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            13
+          </p>
+
+          <h2 class="case-section-title">
+            Limitações e evolução
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            A versão atual foi deliberadamente mantida
+            como aplicação local e de portfólio.
+            Recursos de infraestrutura multiusuário
+            não foram adicionados sem uma necessidade real.
+
+          </p>
+
+
+          <div class="case-highlight">
+
+            <strong>
+              Fora do escopo atual
+            </strong>
+
+            Autenticação, PostgreSQL, object storage,
+            API REST, observabilidade, filtros avançados
+            e deploy público permanecem como possíveis
+            evoluções futuras.
+
+          </div>
+
+
+          <p>
+
+            A aplicação está tecnicamente preparada
+            para deploy, mas a publicação pública
+            não faz parte desta versão.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 14 RESULTADO -->
+
+    <section class="case-section">
+
+      <div class="container case-section-grid">
+
+        <div>
+
+          <p class="case-section-number">
+            14
+          </p>
+
+          <h2 class="case-section-title">
+            Resultado
+          </h2>
+
+        </div>
+
+
+        <div class="case-content">
+
+          <p>
+
+            O DataBoard Reports evoluiu de um fluxo
+            simples de upload de planilhas para uma
+            aplicação capaz de interpretar dados,
+            selecionar análises, gerar visualizações,
+            manter histórico e produzir relatórios.
+
+          </p>
+
+
+          <ul class="case-list">
+
+            <li>
+              CSV, XLS e XLSX;
+            </li>
+
+            <li>
+              cabeçalho automático;
+            </li>
+
+            <li>
+              inferência semântica;
+            </li>
+
+            <li>
+              análise automática;
+            </li>
+
+            <li>
+              gráficos semanticamente selecionados;
+            </li>
+
+            <li>
+              dashboard e qualidade dos dados;
+            </li>
+
+            <li>
+              histórico e reprocessamento;
+            </li>
+
+            <li>
+              relatórios PDF;
+            </li>
+
+            <li>
+              segurança básica;
+            </li>
+
+            <li>
+              Docker, CI e 206 testes.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FINAL -->
+
+    <section class="case-final">
+
+      <div class="container">
+
+        <div class="case-final-card">
+
+          <div>
+
+            <p class="eyebrow">
+              Software orientado a dados
+            </p>
+
+            <h2>
+              Da planilha à análise sem depender
+              de um schema fixo.
+            </h2>
+
+            <p>
+
+              O projeto combina desenvolvimento web,
+              análise de dados e engenharia de software
+              para transformar arquivos tabulares em
+              informação estruturada.
+
+            </p>
+
+          </div>
+
+
+          <div class="case-final-actions">
+
+            <a
+              class="button button-primary"
+              href="https://github.com/Ibjunior01/databoard-reports"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver código no GitHub ↗
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="index.html"
+            >
+              Outros projetos
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        Portfólio profissional —
+        Full Stack, Automação, IA e Dados.
+      </p>
+
+      <a href="#topo">
+        Voltar ao topo ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- JS -->
+
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js/navigation.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

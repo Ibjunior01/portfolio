@@ -23,6 +23,10 @@
   </url>
 
   <url>
+    <loc>https://ibermon-portfolio.vercel.app/projetos/databoard-reports.html</loc>
+  </url>
+
+  <url>
     <loc>https://ibermon-portfolio.vercel.app/projetos/pilates.html</loc>
     <priority>0.7</priority>
   </url>
